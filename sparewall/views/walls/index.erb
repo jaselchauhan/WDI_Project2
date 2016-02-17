@@ -1,0 +1,29 @@
+<h2>Index</h2>
+
+
+<div class="walls">
+  <div class="row">
+    <ul>
+      <% @walls.each do |wall| %>
+      <li>
+        <a href="/walls/<%= wall.id %>">
+          <%= wall.title %> - <%= wall.ideal_design %>
+        </a>
+      </li>
+    
+    <img src="<%=wall.image%>">
+
+      <li>
+        <a href="/walls/<%= wall.id %>/edit">
+          Edit
+        </a>
+      </li>
+      <li>
+        <form method="post" action="/walls/<%= wall.id %>/delete">
+          <button>Delete</button>
+        </form>
+      </li>
+      <% end %>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+<h2>Edit Wall</h2>
+
+<form action="/walls/<%= @wall.id %>" method="post">
+  <label for="wall[title]">Video:</label>
+  <input name="wall[title]" value="<%= @wall.title %>">
+  <br>
+  <label for="wall[description]">Description:</label>
+  <input name="wall[description]" value="<%= @wall.description %>">
+  <br>
+  <label for="wall[image]">URL:</label>
+  <input name="wall[image]" value="<%= @wall.image %>">
+  <br>
+  <label for="wall[ideal_design]">Genre:</label>
+  <input name="wall[ideal_design]" value="<%= @wall.ideal_design %>">
+  <br>
+
+  <input type="submit" value="Update">
+</form>

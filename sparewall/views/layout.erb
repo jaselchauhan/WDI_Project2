@@ -2,9 +2,26 @@
 <html>
 <head>
 <title>Served from layout</title>
+<link href='http://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+<link rel='stylesheet' href='/css/reset.css'>
 <link rel='stylesheet' href='/css/app.css'>
 </head>
 <body>
+
+<header>
+  <nav>
+    <ul>
+      <li><a href="/">SpareWall</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/contact">Contact</a></li>
+      <li><a href="/walls">SpareWalls</a></li>
+      <li><a href="#">Decorated Walls</a></li>
+      <li><a href="/walls/new">Does your wall need color?</a></li>
+    </ul>
+  </nav>
+</header>
+
+
 <%= yield %>
 </body>
 </html>

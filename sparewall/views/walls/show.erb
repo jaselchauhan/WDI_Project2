@@ -1,0 +1,17 @@
+<h2><%= @wall.title %> </h2>
+
+<p><strong>Genre:</strong> <%= @wall.ideal_design %></p>
+
+<p><strong>Description:</strong> $<%= @wall.description  %></p>
+
+<img src="<%=@wall.image%>">
+
+<a href="/walls/<%= @wall.id %>/edit">Edit</a>
+
+<li>
+  <form method="post" action="/walls/<%= @wall.id %>/delete">
+    <button>Delete</button>
+  </form>
+</li>
+
+
