@@ -1,0 +1,18 @@
+<h2>Edit User</h2>
+
+<form action="/users/<%= @user.id %>" method="post">
+  <label for="user[username]">USername:</label>
+  <input name="user[username]" value="<%= @user.username %>">
+  <br>
+  <label for="user[location]">location:</label>
+  <input name="user[location]" value="<%= @user.location %>">
+  <br>
+  <label for="user[image]">URL:</label>
+  <input name="user[image]" value="<%= @user.image %>">
+  <br>
+  <label for="user[bio]">Genre:</label>
+  <input name="user[bio]" value="<%= @user.bio %>">
+  <br>
+
+  <input type="submit" value="Update">
+</form>

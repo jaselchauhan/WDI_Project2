@@ -1,6 +1,8 @@
 require_relative "../models/Wall.rb"
+require_relative "../models/User.rb"
 
 Wall.destroy_all
+User.destroy_all
 
 [
   { 
@@ -22,4 +24,18 @@ Wall.destroy_all
 ].each do |wall|
   Wall.create!(wall)
 end
+
+
+[
+  {
+    username: "Tha Doggfather", 
+    location: "https://s3.amazonaws.com/rapgenius/1366744664_tha-doggfather-5048f1c320e29.jpg", 
+    bio: "minimalist", 
+    image: "sdkal;sa",
+    rating: 0
+  }
+].each do |user|
+  User.create!(user)
+end
+
 
