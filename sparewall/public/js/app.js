@@ -1,0 +1,1 @@
+console.log("vanilla js loaded from public/js/app.js");
