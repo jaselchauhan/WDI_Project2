@@ -37,7 +37,7 @@ end
 
 
 [
-  {
+  { title: "I want my front door painted - any takers?",
     is_painted: false, 
     image: "http://image.naldzgraphics.net/2011/02/24-grungy-brick-wall.jpg",
     location: "london",
@@ -46,7 +46,7 @@ end
 
   },
  
-  {
+  { title: "This is my house wall", 
     is_painted: false, 
     image: "http://image.naldzgraphics.net/2011/02/24-grungy-brick-wall.jpg",
     location: "essex",
@@ -55,7 +55,7 @@ end
 
   },
 
-  {
+  { title: "garage needs a fresh coat", 
     is_painted: false, 
     image: "http://image.naldzgraphics.net/2011/02/24-grungy-brick-wall.jpg",
     location: "east",
@@ -64,7 +64,7 @@ end
 
   },
   
-  {
+  { title: "paint me!", 
     is_painted: false, 
     image: "http://image.naldzgraphics.net/2011/02/24-grungy-brick-wall.jpg",
     location: "bandit county",
