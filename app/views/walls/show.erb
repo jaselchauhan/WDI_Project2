@@ -1,1 +1,14 @@
-<h1>edit</h1>
+<h2><%= @wall.title %></h2>
+<% if @wall.image %>
+  <img class="media-object" src="<%= @wall.image %>" alt="<%= @wall.title %>'s image">
+<% else %>
+  <img class="media-object" src="/images/default.png" alt="<%= @wall.title %>'s image">
+<% end %>
+
+<p>bio: <%= @wall.location %></p>
+
+<p>wall owner </p>
+<p>artist</p>
+
+<p>my artist and owner! (link profile pics to both here):</p>
+<p> add a contact me button here </p>
