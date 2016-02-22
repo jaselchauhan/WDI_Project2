@@ -7,17 +7,43 @@
 <% end %>
 <form id="register" method="post" action="/register">
   <div class="form-group">
-    <label for="username">Username</label>
+    <label for="username">username</label>
     <input name="user[username]" type="text" class="form-control" id="username" placeholder="Username">
   </div>
+
   <div class="form-group">
-    <label for="email">Email address</label>
+    <label for="first_name">first name</label>
+    <input name="user[first_name]" type="text" class="form-control" id="first_name" placeholder="first name">
+  </div>
+
+  <div class="form-group">
+    <label for="last_name">last name</label>
+    <input name="user[last_name]" type="text" class="form-control" id="last_name" placeholder="last name">
+  </div>
+
+  <div class="form-group">
+    <label for="first_name">email address</label>
     <input name="user[email]" type="email" class="form-control" id="email" placeholder="Email">
   </div>
   
-  <div>
-    <label for="password">Password</label>
+  <div class="form-group">
+    <label for="password">password</label>
     <input name="user[password]" type="password" class="form-control" id="password" placeholder="password">
+  </div>
+
+  <div class="form-group">
+    <label for="image">image</label>
+    <input name="user[image]" type="text" class="form-control" id="image" placeholder="image">
+  </div>
+
+  <div class="form-group">
+    <label for="bio">bio</label>
+    <input name="user[bio]" type="text" class="form-control" id="bio" placeholder="biography">
+  </div>
+
+  <div class="form-group">
+    <label for="user_type">user_type</label>
+    <input name="user[user_type]" type="text" class="form-control" id="user_type" placeholder="are you an artist or a wall_owner?">
   </div>
 
   <button type="submit" class="btn btn-default">Sign Up</button>

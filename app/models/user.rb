@@ -9,7 +9,6 @@ class User < ActiveRecord::Base
 
   has_secure_password
 
-
   has_many :owned_walls, class_name: "Wall", foreign_key: "owner_id"
 
   has_many :painted_walls, class_name: "Wall", foreign_key: "artist_id"
