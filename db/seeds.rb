@@ -35,7 +35,7 @@ end
 [
   {
     is_painted: true, 
-    image: "http://www.fillmurray.com/g/201/301",
+    image: "http://image.naldzgraphics.net/2011/02/24-grungy-brick-wall.jpg",
     location: "london",
     owner_id: "",
     artist_id: ""
@@ -44,7 +44,7 @@ end
  
   {
     is_painted: true, 
-    image: "http://www.fillmurray.com/g/202/302",
+    image: "http://image.naldzgraphics.net/2011/02/24-grungy-brick-wall.jpg",
     location: "essex",
     owner_id: "",
     artist_id: "" 

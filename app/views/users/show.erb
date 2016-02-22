@@ -4,8 +4,13 @@
 <% else %>
   <img class="media-object" src="/images/default.png" alt="<%= @user.username %>'s image">
 <% end %>
-<p><%= @user.bio %></p>
-<p><%= @user.email %></p>
+<p>full name: <%= @user.first_name %> <%= @user.last_name %></p>
+
+<p>email: <%= @user.email %></p>
+<p>user_type: <%= @user.email %></p>
+<p>bio: <%= @user.bio %></p>
+
+<p>walls: <%= @user.walls %></p>
 
 
 
