@@ -1,0 +1,17 @@
+<h2>All Walls</h2>
+<ul class="media-list">
+  <% @walls.each do |wall| %>
+    <li class="media">
+      <div class="media-left">
+        <a href="/walls/<%= wall.id %>">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/walls/<%= wall.id %>">
+          <h4 class="media-heading"><%= wall.image_before %></h4>
+        </a>
+        <%= wall.location %>
+      </div>
+    </li>
+  <% end %>
+</ul>

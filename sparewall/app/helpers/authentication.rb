@@ -16,3 +16,6 @@ helpers do
   end
 
 end
+
+
+#create helper functions for checking if the logged in user is an artist or a wallowner - these will determine what user can see.
