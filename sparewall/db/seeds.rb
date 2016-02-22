@@ -4,20 +4,26 @@ User.destroy_all
 
 [
   {
-    username: "Tha Doggfather", 
-    email: "snoop@dogg.com",
-    location: "the dogg pound", 
-    bio: "i'm a dogg", 
-
-    rating: 0
-  },
-  {
-    username: "Pai Mei", 
+    username: "paimei", 
+    first_name: "pai",
+    last_name: "mei",
     email: "pai@mei.com",
-    location: "somewhere in the mountains...", 
-    bio: "i can stand on a sword", 
+    image: "http://www.fillmurray.com/200/300",
+    bio: "i'm a dogg", 
+    user_type: "artist",
+    password: "pai",
 
-    rating: 0
+  },
+  
+  {
+    username: "wall-E", 
+    first_name: "Patient",
+    last_name: "Buffalo",
+    email: "walle@gmail.com",
+    image: "http://www.fillmurray.com/201/301",
+    bio: "i'm a wall-owner", 
+    user_type: "wall owner",
+    password: "patient",
   }
 ].each do |user|
   User.create!(user)
