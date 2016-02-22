@@ -19,3 +19,9 @@ end
 
 
 #create helper functions for checking if the logged in user is an artist or a wallowner - these will determine what user can see.
+
+# def current_user_type
+#     @current_user_type = User.find(params[:])
+#     p @current_user_type
+# end
+

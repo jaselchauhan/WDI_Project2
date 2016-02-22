@@ -5,7 +5,6 @@ get "/walls" do
   erb :"walls/index"
 end
 
-
 # SHOW
 get "/walls/:id" do
   authorize!
@@ -15,4 +14,11 @@ get "/walls/:id" do
   else
     redirect "/walls"
   end
+end
+
+
+get "/completed_walls" do
+  authorize!
+  @walls = Wall.all
+  erb :"walls/completed_walls"
 end
