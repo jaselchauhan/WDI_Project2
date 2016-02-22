@@ -1,8 +1,10 @@
 require_relative "../app/models/user.rb"
 require_relative "../app/models/wall.rb"
+require_relative "../app/models/comment.rb"
 
 User.destroy_all
 Wall.destroy_all
+Comment.destroy_all
 
 [
   {
@@ -73,9 +75,33 @@ end
 
   }
 
-
 ].each do |wall|
   Wall.create!(wall)
+end
+
+[
+  { title: "I want my front door painted - any takers?",
+    comment: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente cumque ullam accusamus, iste, quo neque rerum reiciendis voluptatem veniam inventore, accusantium labore perspiciatis ex voluptatibus fugiat dolore soluta. Repellat, sunt?"
+
+  },
+ 
+  { title: "This is my house wall", 
+   comment: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa maiores, rem! Soluta et voluptas, libero porro, placeat harum doloribus ipsam nesciunt dicta alias, atque aliquam odio laborum enim, sed ea."
+
+  },
+
+  { title: "garage needs a fresh coat", 
+   comment: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit at soluta quibusdam fuga minus, quas facilis consequatur veritatis asperiores nihil laboriosam rerum maiores dolore ex magnam ratione tenetur quos ipsum!"
+
+  },
+  
+  { title: "paint me!", 
+    comment: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit accusamus, non dolorum fuga, est ipsa quasi odit error, doloremque aliquid explicabo nesciunt voluptatum iste iusto ex recusandae eaque, a adipisci."
+
+  }
+
+].each do |comment|
+  Comment.create!(comment)
 end
 
 
