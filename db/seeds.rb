@@ -35,21 +35,19 @@ end
 [
   {
     is_painted: true, 
-    image_before: "http://www.fillmurray.com/g/201/301",
-    image_after: "http://www.fillmurray.com/201/301",
+    image: "http://www.fillmurray.com/g/201/301",
     location: "london",
-    owner_ID: "",
-    artist_ID: ""
+    owner_id: "",
+    artist_id: ""
 
   },
  
   {
     is_painted: true, 
-    image_before: "http://www.fillmurray.com/g/202/302",
-    image_after: "http://www.fillmurray.com/202/302",
+    image: "http://www.fillmurray.com/g/202/302",
     location: "essex",
-    owner_ID: "",
-    artist_ID: "" 
+    owner_id: "",
+    artist_id: "" 
 
   }
 

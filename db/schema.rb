@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160222134429) do
+ActiveRecord::Schema.define(version: 20160222144057) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -30,9 +30,9 @@ ActiveRecord::Schema.define(version: 20160222134429) do
   create_table "walls", force: :cascade do |t|
     t.boolean "is_painted"
     t.string  "location"
-    t.string  "owner_ID"
-    t.string  "artist_ID"
     t.string  "image"
+    t.integer "artist_id"
+    t.integer "owner_id"
   end
 
 end
