@@ -14,6 +14,17 @@ get "/walls/new" do
   erb :"walls/new"
 end
 
+# CREATE
+post "/walls" do
+  authorize!
+  @wall = Wall.new(params[:wall])
+  if @wall.save
+    redirect "/walls"
+  else
+    erb :"walls/new"
+  end
+end
+
 # SHOW
 get "/walls/:id" do
   authorize!

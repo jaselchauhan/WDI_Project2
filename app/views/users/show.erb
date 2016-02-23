@@ -19,7 +19,6 @@
 <p><a href="/walls/new">Add a new wall</a></p>
 <% end %>
 
-
 <% @user.owned_walls.each do |wall| %>
   <%= wall.title %>
   <a href="/walls/<%=wall.id%>"><img src="<%= wall.image %>" width=300px></a>
