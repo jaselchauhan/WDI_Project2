@@ -1,7 +1,7 @@
 body { background-color: #FCFCFC; }
 
-#map { height: 300px; width: 600px; display: auto; margin: 0 auto; border: 5px solid #553EA1; border-radius: 5px; }
-
 .navbar { background-color: #464655; color: #00A676; }
+
+#property-map { height: 600px; margin: 20px 0; }
 
 /*# sourceMappingURL=style.css.map */
