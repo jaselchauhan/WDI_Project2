@@ -84,7 +84,7 @@ end
     is_painted: false, 
     image: "http://image.naldzgraphics.net/2011/02/24-grungy-brick-wall.jpg",
     location: "london",
-    owner_id: "",
+    owner_id: "2",
     artist_id: ""
 
   },
@@ -93,7 +93,7 @@ end
     is_painted: false, 
     image: "http://image.naldzgraphics.net/2011/02/24-grungy-brick-wall.jpg",
     location: "essex",
-    owner_id: "",
+    owner_id: "2",
     artist_id: "" 
 
   },
@@ -102,7 +102,7 @@ end
     is_painted: false, 
     image: "http://image.naldzgraphics.net/2011/02/24-grungy-brick-wall.jpg",
     location: "east",
-    owner_id: "",
+    owner_id: "4",
     artist_id: ""
 
   },
@@ -111,8 +111,17 @@ end
     is_painted: false, 
     image: "http://image.naldzgraphics.net/2011/02/24-grungy-brick-wall.jpg",
     location: "bandit county",
-    owner_id: "",
+    owner_id: "4",
     artist_id: "" 
+
+  },
+  
+  { title: "completed test wall!", 
+    is_painted: true, 
+    image: "http://pre01.deviantart.net/d68d/th/pre/i/2013/216/5/c/background__painted_brick_wall_by_cesstrelle-d6glbjn.jpg",
+    location: "bandit county",
+    owner_id: "4",
+    artist_id: "1" 
 
   }
 

@@ -1,11 +1,17 @@
 <div class="container-fluid">
 
-<h2>artists</h2>
 
+<% if current_user.user_type == "artist" %>
+  <h2>wall owners</h2>
+<% else %>
+  <h2>artists</h2>
+<% end %>
+
+<% if current_user.user_type == "artist" %>
 
       <% @users.each do |user| %>
-
-      <% if user.user_type == "artist" %>
+    
+      <% if user.user_type == "wall_owner" %>
 
       <div class="row">
       <ul class="media-list">
@@ -31,6 +37,42 @@
       <% end %>
 
       <% end %>
+
+
+<% else %>
+
+    <% @users.each do |user| %>
+
+    <% if user.user_type == "artist" %>
+
+    <div class="row">
+    <ul class="media-list">
+      <li class="media">
+        <div class="media-left">
+          <a href="/users/<%= user.id %>">
+            <% if user.image %>
+              <img class="media-object img-rounded" src="<%= user.image %>" alt="<%= user.username %>'s image">
+            <% else %>
+              <img class="media-object" src="/images/default.png" alt="<%= user.username %>'s image">
+            <% end %>
+          </a>
+        </div>
+        <div class="media-body">
+          <a href="/users/<%= user.id %>">
+            <h4 class="media-heading"><%= user.username %></h4>
+          </a>
+          <%= user.user_type %>
+      </li>
+        </div>
+      </ul>
+
+    <% end %>
+
+    <% end %>
+
+<% end %>
+
+
    
 
   </div>

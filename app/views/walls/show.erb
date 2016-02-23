@@ -8,8 +8,11 @@
 <br><br>
 <p>location: <%= @wall.location %></p>
 
-<p><strong> <a href="/users/<%= @wall.owner_id %>">find out more about the owner</a></strong></p>
-<p>artist</p>
+
+<p><strong> wall belongs to owner of ID: <%=@wall.owner_id %> <a href="/users/<%= @wall.owner_id %>">find out more about the owner</a></strong></p>
+
+
+<p>artist is: <%= @wall.artist_id %></p>
 
 <p>my artist and owner! (link profile pics to both here): <%= @wall.owner_id %></p>
 <p> add a paint me button here which sets the artist_id field of wall table to the current user. will only work once logic is in place which shows artist/owners diff pages - so efffectivly only artists can click </p>
