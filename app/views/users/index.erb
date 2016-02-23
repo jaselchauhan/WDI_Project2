@@ -2,10 +2,11 @@
 
 <h2>All Users</h2>
 
-  <div class="row">
-  <ul class="media-list">
+  
     
       <% @users.each do |user| %>
+      <div class="row">
+      <ul class="media-list">
         <li class="media">
           <div class="media-left">
             <a href="/users/<%= user.id %>">
@@ -22,9 +23,10 @@
             </a>
             <%= user.user_type %>
         </li>
+          </div>
+        </ul>
       <% end %>
-    </div>
-  </ul>
+   
 
   </div>
 
