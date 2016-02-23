@@ -38,7 +38,7 @@ end
 
 #completed walls index
 get "/completed_walls" do
-  authorize!
+
   @walls = Wall.all
   erb :"walls/completed_walls"
 end
