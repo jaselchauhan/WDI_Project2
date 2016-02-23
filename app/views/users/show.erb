@@ -11,10 +11,11 @@
 <p>bio: <%= @user.bio %></p>
 
 <p>my walls: <%= @user.walls %></p>
-<p> add a contact me section which sends an email to the user email add </p>
 
 <p><a href="mailto:<%=@user.email%>?Subject=i wanna paint your wall!" id="email_form">&lt; Contact Me! &gt;</a></p>
 
+
+<p><a href="/walls/new">Add a new wall</a></p>
 
 <% @user.owned_walls.each do |wall| %>
   <%= wall.title %>

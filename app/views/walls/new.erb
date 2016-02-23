@@ -1,0 +1,25 @@
+<h2>add a wall</h2>
+
+<form id="new" method="post" action="/walls">
+  
+  <div class="form-group">
+  <div class="form-group">
+    <label for="title">title</label>
+    <input name="wall[title]" type="text" class="form-control" id="title" placeholder="title" value="<%= @wall.title %>">
+  </div>
+  <div class="form-group">
+    <label for="location">location</label>
+    <input name="wall[location]" type="text" class="form-control" id="location" placeholder="location">
+  </div>
+  <div class="form-group">
+    <label for="image">image</label>
+    <input name="wall[image]" type="text" class="form-control" id="image" placeholder="image">
+  </div>
+  <div class="form-group">
+    <label for="owner_id">owner_id</label>
+    <input name="wall[owner_id]" type="text" class="form-control" id="owner_id" placeholder="owner_id" value="<%= current_user.id %>" type="hidden">
+  </div>
+
+  <button type="submit" class="btn btn-default">create wall</button>
+</form>
+

@@ -5,6 +5,15 @@ get "/walls" do
   erb :"walls/index"
 end
 
+
+# NEW
+get "/walls/new" do
+  authorize!
+  @wall = Wall.new
+  @user = User.new
+  erb :"walls/new"
+end
+
 # SHOW
 get "/walls/:id" do
   authorize!
