@@ -1,29 +1,32 @@
 <div class="container-fluid">
 
-<h1>all walls</h1>
+<h1>spare walls</h1>
 
 <div class="row">
   <% @walls.each do |wall| %>
-  <div class="col-md-6">
-      <ul class="media-list">
-        <li class="media">
-          <div class="media-left">
-            <a href="/walls/<%= wall.id %>">
-            </a>
-          </div>
-          <div class="media-body">
-            <a href="/walls/<%= wall.id %>">
-              <img src="<%= wall.image %>" width="440px">
-            </a>
-            <%= wall.location %>
-          </div>
-        </li>
-        </ul>
-      </div>
+
+    <% if !(wall.owner_id.present? && wall.artist_id.present?) %>
+
+    <div class="col-md-6">
+        <ul class="media-list">
+          <li class="media">
+            <div class="media-left">
+              <a href="/walls/<%= wall.id %>">
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/walls/<%= wall.id %>">
+                <img src="<%= wall.image %>" width="440px">
+              </a>
+              <%= wall.location %>
+            </div>
+          </li>
+          </ul>
+        </div>
+      <% end %>
   <% end %>
 <!-- </ul> -->
 </div>
-
 
 </div>
 

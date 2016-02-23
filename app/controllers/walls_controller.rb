@@ -39,3 +39,14 @@ get "/walls/:id/edit" do
   @wall = Wall.find(params[:id])
   erb :"walls/edit"
 end
+
+# UPDATE
+put '/walls/:id' do
+  authorize!
+  @wall = Wall.find(params[:id])
+  if @wall.update(params[:wall])
+    redirect "/walls/#{@wall.id}"
+  else
+    erb :"walls/show"
+  end
+end
