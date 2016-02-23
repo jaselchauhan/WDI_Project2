@@ -2,7 +2,6 @@
 get '/register' do
   @user = User.new
   erb :'authentications/new'
-  
 end
 
 #handle the form

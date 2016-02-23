@@ -1,9 +1,9 @@
-<h2>Edit Profile</h2>
+<h2>edit profile</h2>
 <form id="edit" method="post" action="/users/<%= @user.id %>">
   <input type="hidden" name="_method" value="put">
   <div class="form-group">
   <div class="form-group">
-    <label for="username">Username</label>
+    <label for="username">username</label>
     <input name="user[username]" type="text" class="form-control" id="username" placeholder="Username" value="<%= @user.username %>">
   </div>
   <div class="form-group">
@@ -30,5 +30,9 @@
     <label for="bio">bio</label>
     <input name="user[bio]" type="text" class="form-control" id="bio" placeholder="bio" value="<%= @user.bio %>">
   </div>
-  <button type="submit" class="btn btn-default">Edit</button>
+  <div class="form-group">
+    <label for="user_type">user_type</label>
+    <input name="user[user_type]" type="text" class="form-control" id="user_type" placeholder="user_type" value="<%= @user.user_type %>">
+  </div>
+  <button type="submit" class="btn btn-default">edit</button>
 </form>
