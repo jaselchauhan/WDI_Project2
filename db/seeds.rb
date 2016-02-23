@@ -52,7 +52,7 @@ Vice meh green juice, +1 shabby chic vinyl williamsburg venmo mumblecore. Man bu
         username: "drunkhippo", 
         first_name: "drunk",
         last_name: "hippo",
-        email: "walle2@gmail.com",
+        email: "drunkhippo@gmail.com",
         image: "http://www.fillmurray.com/303/303",
         bio: "Sustainable tumblr meh echo park. Mlkshk skateboard beard pabst hammock, tumblr chicharrones cliche banjo 90's sustainable man bun williamsburg pour-over. Skateboard chartreuse chia, cold-pressed before they sold out offal whatever plaid portland. Health goth wolf mixtape artisan chillwave, taxidermy cornhole. Cronut quinoa stumptown pork belly, cray chicharrones shabby chic drinking vinegar. Aesthetic pour-over shabby chic, humblebrag polaroid listicle locavore poutine everyday carry tattooed actually tilde. Cred four loko bespoke fixie kinfolk fashion axe heirloom hashtag, lo-fi cliche crucifix farm-to-table.
 

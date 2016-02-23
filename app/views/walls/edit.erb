@@ -1,1 +1,27 @@
-<h1>edit wall placeholder</h1>
+<h2>edit walls</h2>
+<form id="edit" method="post" action="/walls/<%= @wall.id %>">
+  <input type="hidden" name="_method" value="put">
+  <div class="form-group">
+  <div class="form-group">
+    <label for="title">title</label>
+    <input name="wall[title]" type="text" class="form-control" id="title" placeholder="title" value="<%= @wall.title %>">
+  </div>
+  <div class="form-group">
+    <label for="location">location</label>
+    <input name="wall[location]" type="text" class="form-control" id="location" placeholder="location" value="<%= @wall.location %>">
+  </div>
+  <div class="form-group">
+    <label for="image">image</label>
+    <input name="wall[image]" type="text" class="form-control" id="image" placeholder="image" value="<%= @wall.image %>">
+  </div>
+  <div class="form-group">
+    <label for="owner_id">owner_id</label>
+    <input name="wall[owner_id]" type="text" class="form-control" id="owner_id" placeholder="owner_id" value="<%= @wall.owner_id %>">
+  </div>
+  <div class="form-group">
+    <label for="artist_id">artist_id</label>
+    <input name="wall[artist_id]" type="text" class="form-control" id="artist_id" placeholder="artist_id" value="<%= @wall.artist_id %>">
+  </div>
+
+  <button type="submit" class="btn btn-default">edit</button>
+</form>
