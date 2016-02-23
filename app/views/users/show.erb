@@ -14,4 +14,11 @@
 <p> add a contact me section which sends an email to the user email add </p>
 
 
+<% @user.owned_walls.each do |wall| %>
+  <%= wall.title %>
+  <a href="/walls/<%=wall.id%>"><img src="<%= wall.image %>" width=300px></a>
+<% end %>
+
+
+
 
