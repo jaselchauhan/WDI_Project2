@@ -17,7 +17,6 @@
 
 <p>show wall owner and have a link to their email / email them</p>
 
-<p>edit the wall info here</p>
-
+<% if current_user.user_type == "wall_owner" %>
 <p><strong><a href="/walls/<%=@wall.id %>/edit">edit/update this wall</a></strong></p>
-
+<% end %>
