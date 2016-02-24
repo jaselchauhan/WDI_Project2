@@ -1,6 +1,10 @@
+# require 'carrierwave'
+
 require_relative "../app/models/user.rb"
 require_relative "../app/models/wall.rb"
 require_relative "../app/models/comment.rb"
+
+APP_ROOT = Pathname.new(File.expand_path('../../', __FILE__))
 
 User.destroy_all
 Wall.destroy_all
@@ -8,7 +12,7 @@ Comment.destroy_all
 
 [
   {
-    username: "paimei", 
+    username: "paimei",
     first_name: "pai",
     last_name: "mei",
     email: "pai@mei.com",
@@ -78,11 +82,14 @@ Vice meh green juice, +1 shabby chic vinyl williamsburg venmo mumblecore. Man bu
   User.create!(user)
 end
 
+# image = File.open("#{APP_ROOT}/public/uploads/grungy-brick-wall.jpg");
+
+# p image
 
 [
   { title: "I want my front door painted - any takers?",
     is_painted: false, 
-    image: "http://image.naldzgraphics.net/2011/02/24-grungy-brick-wall.jpg",
+    image: 'http://image.naldzgraphics.net/2011/02/24-grungy-brick-wall.jpg',
     city: "london",
     owner_id: "2",
     artist_id: "",

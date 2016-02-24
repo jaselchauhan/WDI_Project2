@@ -1,5 +1,5 @@
-require 'carrierwave/orm/activerecord'
-require_relative '../uploaders/wall_uploader'
+# require 'carrierwave/orm/activerecord'
+# require_relative '../uploaders/wall_uploader'
 
 class Wall < ActiveRecord::Base
 
@@ -8,6 +8,6 @@ class Wall < ActiveRecord::Base
 
   has_many :comments
 
-  mount_uploader :image, WallPicUploader
+  # mount_uploader :image, WallPicUploader
   
 end

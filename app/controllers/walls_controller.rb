@@ -2,17 +2,16 @@
 get "/walls" do
   authorize!
 
-  # if user is artist
-  # @walls = Wall.where owner_id is null
-  # else if user is owner
 
-  # if current_user.user_type == "wall_owner"
-  #   @walls = Wall.find_by user_type: 'wall_owner'
-  # else
-  #   @walls = Wall.find_by user_type: 'artist'
-  # end
+  if params[:search] && !params[:search].empty?
+      @walls = Wall.where("address1 ILIKE :search OR postcode ILIKE :search OR city ILIKE :search", { search: "%#{params[:search]}%" })
+    else
+      @walls = Wall.all
+    end 
 
-  @walls = Wall.all
+
+
+  # @walls = Wall.all
   erb :"walls/index"
 end
 
@@ -75,7 +74,11 @@ end
 
 #maps page
 get "/wallsmap" do
-  @walls = Wall.all
+  if current_user.user_type == "wall_owner"
+    @walls = Wall.where(artist_id: nil)
+  else
+    @walls = Wall.where.not(artist_id: nil)
+  end
   erb :"walls/indexmap"
 end
 
