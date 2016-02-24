@@ -5,7 +5,6 @@ get "/walls" do
   erb :"walls/index"
 end
 
-
 # NEW
 get "/walls/new" do
   authorize!
@@ -36,24 +35,10 @@ get "/walls/:id" do
   end
 end
 
-#completed walls index
-get "/completed_walls" do
-
-  @walls = Wall.all
-  erb :"walls/completed_walls"
-end
-
-
-#completed walls index
-get "/wallsmap" do
-  @walls = Wall.all
-  erb :"walls/indexmap"
-end
-
-
 # EDIT
 get "/walls/:id/edit" do
   authorize!
+  @users = User.all
   @wall = Wall.find(params[:id])
   erb :"walls/edit"
 end
@@ -67,4 +52,18 @@ put '/walls/:id' do
   else
     erb :"walls/show"
   end
+end
+
+#completed walls
+get "/completed_walls" do
+
+  @walls = Wall.all
+  erb :"walls/completed_walls"
+end
+
+
+#maps page
+get "/wallsmap" do
+  @walls = Wall.all
+  erb :"walls/indexmap"
 end

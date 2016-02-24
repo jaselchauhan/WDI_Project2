@@ -23,13 +23,23 @@
     <input name="wall[image]" type="text" class="form-control" id="image" placeholder="image" value="<%= @wall.image %>">
   </div>
   <div class="form-group">
-    <label for="owner_id">owner_id</label>
-    <input name="wall[owner_id]" type="text" class="form-control" id="owner_id" placeholder="owner_id" value="<%= @wall.owner_id %>">
+    <input name="wall[owner_id]" type="hidden" class="form-control" id="owner_id" placeholder="owner_id" value="<%= @wall.owner_id %>">
   </div>
+
+
   <div class="form-group">
-    <label for="artist_id">artist_id</label>
-    <input name="wall[artist_id]" type="text" class="form-control" id="artist_id" placeholder="artist_id" value="<%= @wall.artist_id %>">
+  <label for="artist_id">artist</label>
+    <select name="wall[artist_id]">
+      <option value="#" selected>----</option>
+        <% @users.each do |user| %>
+          <% if user.user_type == "artist" %>
+          <option value="<%= user.id %>"><%= user.username %></option> 
+          <% end %>
+        <% end %>
+    </select>
   </div>
 
   <button type="submit" class="btn btn-default">edit</button>
 </form>
+
+
