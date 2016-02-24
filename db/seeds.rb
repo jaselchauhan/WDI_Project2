@@ -97,8 +97,8 @@ end
     location: "essex",
     owner_id: "2",
     artist_id: "",
-    lat:53.5117 ,
-    lng: -0.1275
+    lat:51.5211 ,
+    lng: -0.0713
 
   },
 
@@ -108,8 +108,8 @@ end
     location: "east",
     owner_id: "4",
     artist_id: "",
-    lat:52.5117 ,
-    lng: -0.1275
+    lat:51.5186 ,
+    lng: -0.0813
 
   },
   
@@ -119,8 +119,8 @@ end
     location: "bandit county",
     owner_id: "4",
     artist_id: "",
-    lat:51.5117 ,
-    lng: -0.5275
+    lat:51.5152 ,
+    lng: -0.0722
 
   },
   
@@ -130,8 +130,8 @@ end
     location: "bandit county",
     owner_id: "4",
     artist_id: "1" ,
-    lat:50.5117 ,
-    lng: -0.2275
+    lat:51.4966 ,
+    lng: -0.1448
 
   }
 
