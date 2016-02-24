@@ -11,14 +11,7 @@
     <label for="city">city</label>
     <input name="wall[city]" type="text" class="form-control" id="city" placeholder="city">
   </div>
-  <div class="form-group">
-    <label for="lat">lat</label>
-    <input name="wall[lat]" type="text" class="form-control" id="lat" placeholder="lat">
-  </div>
-  <div class="form-group">
-    <label for="lng">lng</label>
-    <input name="wall[lng]" type="text" class="form-control" id="lng" placeholder="lng">
-  </div>
+
   <div class="form-group">
     <label for="image">image</label>
     <input name="wall[image]" type="text" class="form-control" id="image" placeholder="image">
@@ -26,6 +19,15 @@
   <div class="form-group">
     <label for="owner_id">owner_id</label>
     <input name="wall[owner_id]" type="text" class="form-control" id="owner_id" placeholder="owner_id" value="<%= current_user.id %>" type="hidden">
+  </div>
+
+  <div class="form-group">
+    <label for="lat">lat</label>
+    <input name="wall[lat]" type="text" class="form-control" id="lat" placeholder="lat">
+  </div>
+  <div class="form-group">
+    <label for="lng">lng</label>
+    <input name="wall[lng]" type="text" class="form-control" id="lng" placeholder="lng">
   </div>
 
   <button type="submit" class="btn btn-default">create wall</button>

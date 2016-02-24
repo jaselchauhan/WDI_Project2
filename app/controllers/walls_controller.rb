@@ -1,6 +1,12 @@
 # INDEX
 get "/walls" do
   authorize!
+
+  # if user is artist
+  # @walls = Wall.where owner_id is null
+  # else if user is owner
+  
+
   @walls = Wall.all
   erb :"walls/index"
 end
