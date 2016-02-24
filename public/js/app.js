@@ -57,7 +57,33 @@ $( document ).ready(function() {
 
 
   
+  if ($propertyForm.length){
 
+    var gcoder = new google.maps.Geocoder();
+    var $fields = $propertyForm.find('input');
+
+    $fields.on('blur', function(){
+      var formData = $propertyForm.serializeArray();
+      var address = formData.map(function(dataObj){
+        return dataObj.value;
+      }).filter(function(value){
+        return !!value;
+      }).join(', ');
+
+      gcoder.geocode({address: address}, function(results, status){
+
+
+        if (status === "OK"){
+          var location = results[0].geometry.location;
+          $fields.filter('[name="wall[lat]"]').val(location.lat());
+          $fields.filter('[name="wall[lng]"]').val(location.lng());
+        }
+        console.log(results, status);
+      });
+
+    });
+
+}
 
 
 });
