@@ -67,3 +67,11 @@ get "/wallsmap" do
   @walls = Wall.all
   erb :"walls/indexmap"
 end
+
+#DELETE
+delete "/walls/:id" do
+  @wall = Wall.find(params[:id])
+  @wall.destroy
+
+  redirect "/walls"
+end
