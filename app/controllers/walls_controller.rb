@@ -74,7 +74,7 @@ end
 
 #maps page
 get "/wallsmap" do
-  if current_user.user_type == "wall_owner"
+  if current_user.user_type == "artist"
     @walls = Wall.where(artist_id: nil)
   else
     @walls = Wall.where.not(artist_id: nil)
