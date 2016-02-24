@@ -44,6 +44,13 @@ get "/completed_walls" do
 end
 
 
+#completed walls index
+get "/wallsmap" do
+  @walls = Wall.all
+  erb :"walls/indexmap"
+end
+
+
 # EDIT
 get "/walls/:id/edit" do
   authorize!
