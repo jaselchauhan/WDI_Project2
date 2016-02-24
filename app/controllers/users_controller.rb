@@ -51,3 +51,11 @@ put '/users/:id' do
     erb :"users/show"
   end
 end
+
+#DELETE
+delete "/users/:id" do
+  @user = User.find(params[:id])
+  @user.destroy
+
+  redirect "/register"
+end

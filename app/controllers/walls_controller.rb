@@ -69,9 +69,11 @@ get "/wallsmap" do
 end
 
 #DELETE
-delete "/walls/:id" do
+delete "/walls/:id/delete" do
   @wall = Wall.find(params[:id])
   @wall.destroy
-
   redirect "/walls"
 end
+
+
+

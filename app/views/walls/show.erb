@@ -20,9 +20,11 @@
 <% if current_user.user_type == "wall_owner" %>
 <p><strong><a href="/walls/<%=@wall.id %>/edit">edit/update this wall</a></strong></p>
 
-
-  <form method="post" action="/walls/<%= @wall.id %>/delete">
-    <button>delete</button>
-  </form>
+<form action="/walls/<%= @wall.id %>/delete" method="post">
+  <input id="hidden" type="hidden" name="_method" value="delete">
+  <input type="submit" value="delete">
+</form>
 
 <% end %>
+
+

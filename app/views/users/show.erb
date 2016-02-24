@@ -30,3 +30,6 @@
   <a href="/walls/<%=wall.id%>"><img src="<%= wall.image %>" width=300px></a>
 <% end %>
 
+<form method="post" action="/users/<%= @user.id %>/delete">
+  <button>delete</button>
+</form>
