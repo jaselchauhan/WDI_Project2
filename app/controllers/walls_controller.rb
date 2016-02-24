@@ -38,6 +38,7 @@ end
 get "/walls/:id" do
   authorize!
   @wall = Wall.find(params[:id])
+  @user = User.find(params[:id])
   if @wall
     erb :"walls/show"
   else

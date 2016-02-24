@@ -253,6 +253,19 @@ end
 
   },
 
+
+  { title: "wall in london", 
+    is_painted: false, 
+    image: "http://image.naldzgraphics.net/2011/02/24-grungy-brick-wall.jpg",
+    city: "stratford",
+    owner_id: "10",
+    artist_id: "",
+    lat:51.56228,
+    lng: -0.0529
+
+  },  
+  
+
   { title: "garage needs a fresh coat", 
     is_painted: false, 
     image: "http://image.naldzgraphics.net/2011/02/24-grungy-brick-wall.jpg",
@@ -264,6 +277,19 @@ end
 
   },
   
+
+  { title: "needs some paint", 
+    is_painted: false, 
+    image: "http://image.naldzgraphics.net/2011/02/24-grungy-brick-wall.jpg",
+    city: "stratford",
+    owner_id: "9",
+    artist_id: "",
+    lat:51.5226 ,
+    lng: -0.1352
+
+  },
+
+
   { title: "paint me!", 
     is_painted: false, 
     image: "http://image.naldzgraphics.net/2011/02/24-grungy-brick-wall.jpg",
@@ -436,26 +462,7 @@ end
     lng: -0.0562
 
   },  
-  { title: "wall in london", 
-    is_painted: false, 
-    image: "http://image.naldzgraphics.net/2011/02/24-grungy-brick-wall.jpg",
-    city: "stratford",
-    owner_id: "10",
-    artist_id: "",
-    lat:51.56228,
-    lng: -0.0529
-
-  },  
-  { title: "needs some paint", 
-    is_painted: false, 
-    image: "http://image.naldzgraphics.net/2011/02/24-grungy-brick-wall.jpg",
-    city: "stratford",
-    owner_id: "9",
-    artist_id: "",
-    lat:51.5226 ,
-    lng: -0.1352
-
-  },  
+    
   { title: "paint me!", 
     is_painted: false, 
     image: "http://image.naldzgraphics.net/2011/02/24-grungy-brick-wall.jpg",

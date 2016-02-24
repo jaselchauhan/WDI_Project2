@@ -1,35 +1,60 @@
-<h2><%= @user.username %> (<%= @user.user_type %>)</h2>
-<% if @user.image %>
-  <img class="media-object" src="<%= @user.image %>" alt="<%= @user.username %>'s image">
-<% else %>
-  <img class="media-object" src="/images/default.png" alt="<%= @user.username %>'s image">
-<% end %>
-<br>
-<p>full name: <%= @user.first_name %> <%= @user.last_name %></p>
+<div class="container-fluid">
 
-<p>email: <%= @user.email %></p>
-<p>bio: <%= @user.bio %></p>
+<h2 class="page-header"><%= @user.username %> (<%= @user.user_type %>)</h2>
 
-<p>my walls: <%= @user.walls %></p>
+  <div class="row">
 
-<p><a href="mailto:<%=@user.email%>?Subject=i wanna paint your wall!" id="email_form">&lt; Contact Me! &gt;</a></p>
+    <div class="col-md-6">
+
+      <% if @user.image %>
+      <img class="media-object" src="<%= @user.image %>" alt="<%= @user.username %>'s image">
+      <% else %>
+      <img class="media-object" src="/images/default.png" alt="<%= @user.username %>'s image">
+      <% end %>
+      <br>
+      <p>full name: <%= @user.first_name %> <%= @user.last_name %></p>
+
+      <p>email: <%= @user.email %></p>
+
+      <p><a href="mailto:<%=@user.email%>?Subject=i wanna paint your wall!" id="email_form">&lt; Contact Me! &gt;</a></p>
+    </div>
+
+    <div class="col-md-6">
+
+      <h3>biography</h3>  
+      <p><%= @user.bio %></p>
+    </div>
 
 
-<% if current_user.user_type == "wall_owner" %>
-<p><a href="/walls/new">Add a new wall</a></p>
-<% end %>
+  </div>
 
-<% @user.owned_walls.each do |wall| %>
-  <%= wall.title %>
-  <a href="/walls/<%=wall.id%>"><img src="<%= wall.image %>" width=300px></a>
-<% end %>
 
-<p>see my walls</p>    
-<% @user.painted_walls.each do |wall| %>
-  <%= wall.title %>
-  <a href="/walls/<%=wall.id%>"><img src="<%= wall.image %>" width=300px></a>
-<% end %>
 
-<form method="post" action="/users/<%= @user.id %>/delete">
-  <button>delete</button>
-</form>
+  <div class="row">
+
+    <div class="col-md-12">
+
+      <% if current_user.user_type == "wall_owner" %>
+      <p><a href="/walls/new">Add a new wall</a></p>
+      <% end %>
+
+      <% @user.owned_walls.each do |wall| %>
+      <%= wall.title %>
+      <a href="/walls/<%=wall.id%>"><img src="<%= wall.image %>" width=300px></a>
+      <% end %>
+
+      <p>see my walls</p>    
+      <% @user.painted_walls.each do |wall| %>
+      <%= wall.title %>
+      <a href="/walls/<%=wall.id%>"><img src="<%= wall.image %>" width=300px></a>
+      <% end %>
+
+      <form method="post" action="/users/<%= @user.id %>/delete">
+        <button>delete</button>
+      </form>
+
+    </div>
+
+
+
+  </div>
