@@ -5,7 +5,12 @@ get "/walls" do
   # if user is artist
   # @walls = Wall.where owner_id is null
   # else if user is owner
-  
+
+  # if current_user.user_type == "wall_owner"
+  #   @walls = Wall.find_by user_type: 'wall_owner'
+  # else
+  #   @walls = Wall.find_by user_type: 'artist'
+  # end
 
   @walls = Wall.all
   erb :"walls/index"

@@ -1,6 +1,6 @@
 <h2>add a wall</h2>
 
-<form id="walls" method="post" action="/walls">
+<form id="walls" method="post" action="/walls" enctype="multipart/form-data">
   
   <div class="form-group">
   <div class="form-group">
@@ -14,7 +14,7 @@
 
   <div class="form-group">
     <label for="image">image</label>
-    <input name="wall[image]" type="text" class="form-control" id="image" placeholder="image">
+    <input name="wall[image]" type="file" class="form-control" id="image" placeholder="image">
   </div>
   <div class="form-group">
     <label for="owner_id">owner_id</label>

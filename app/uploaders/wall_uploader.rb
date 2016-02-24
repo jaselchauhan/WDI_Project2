@@ -1,7 +1,7 @@
-# class WallPicUploader < CarrierWave::Uploader::Base
-#   storage :file
+class WallPicUploader < CarrierWave::Uploader::Base
+  storage :file
 
-#   def store_dir
-#     "#{APP_ROOT}/public/uploads"
-#   end
-# end
+  def store_dir
+    "#{APP_ROOT}/public/uploads"
+  end
+end
