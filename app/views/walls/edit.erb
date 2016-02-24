@@ -6,18 +6,28 @@
     <label for="title">title</label>
     <input name="wall[title]" type="text" class="form-control" id="title" placeholder="title" value="<%= @wall.title %>">
   </div>
+
+
+  <div class="form-group">
+    <label for="address1">address1</label>
+    <input name="wall[address1]" type="text" class="form-control" id="address1" placeholder="address1" value="<%= @wall.address1 %>">
+  </div>
+
+  <div class="form-group">
+    <label for="address2">address2</label>
+    <input name="wall[address2]" type="text" class="form-control" id="address2" placeholder="address2" value="<%= @wall.address2 %>">
+  </div>
+
   <div class="form-group">
     <label for="city">city</label>
     <input name="wall[city]" type="text" class="form-control" id="city" placeholder="city" value="<%= @wall.city %>">
   </div>
+
   <div class="form-group">
-    <label for="lat">lat</label>
-    <input name="wall[lat]" type="text" class="form-control" id="lat" placeholder="lat" value="<%= @wall.lat %>">
+    <label for="postcode">postcode</label>
+    <input name="wall[postcode]" type="text" class="form-control" id="postcode" placeholder="postcode" value="<%= @wall.postcode %>">
   </div>
-  <div class="form-group">
-    <label for="lng">lng</label>
-    <input name="wall[lng]" type="text" class="form-control" id="lng" placeholder="lng" value="<%= @wall.lng %>">
-  </div>
+
   <div class="form-group">
     <label for="image">image</label>
     <input name="wall[image]" type="text" class="form-control" id="image" placeholder="image" value="<%= @wall.image %>">
@@ -25,7 +35,6 @@
   <div class="form-group">
     <input name="wall[owner_id]" type="hidden" class="form-control" id="owner_id" placeholder="owner_id" value="<%= @wall.owner_id %>">
   </div>
-
 
   <div class="form-group">
   <label for="artist_id">artist</label>
@@ -38,6 +47,18 @@
         <% end %>
     </select>
   </div>
+
+  <div class="form-group">
+    <label for="lat">lat</label>
+    <input name="wall[lat]" type="text" class="form-control" id="lat" placeholder="lat" value="<%= @wall.lat %>">
+  </div>
+  <div class="form-group">
+    <label for="lng">lng</label>
+    <input name="wall[lng]" type="text" class="form-control" id="lng" placeholder="lng" value="<%= @wall.lng %>">
+  </div>
+
+
+ 
 
   <button type="submit" class="btn btn-default">edit</button>
 </form>

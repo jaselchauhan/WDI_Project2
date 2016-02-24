@@ -30,11 +30,11 @@
 
   <div class="form-group">
     <label for="image">image</label>
-    <input name="wall[image]" type="file" class="form-control" id="image" placeholder="image">
+    <input name="wall[image]" type="text" class="form-control" id="image" placeholder="image">
   </div>
   <div class="form-group">
     <label for="owner_id">owner_id</label>
-    <input name="wall[owner_id]" type="text" class="form-control" id="owner_id" placeholder="owner_id" value="<%= current_user.id %>" type="hidden">
+    <input name="wall[owner_id]" class="form-control" id="owner_id" placeholder="owner_id" value="<%= current_user.id %>" type="hidden">
   </div>
 
   <div class="form-group">
