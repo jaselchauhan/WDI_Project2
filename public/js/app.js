@@ -24,22 +24,36 @@ $( document ).ready(function() {
     console.log(wallsData);
 
 
-    marker = new google.maps.Marker({
-      position: {lat: 51.5117, lng: -0.1275},
-      map: googleMap,
-      animation: google.maps.Animation.DROP
+    var markers = wallsData.map(function(walls){
+
+        marker = new google.maps.Marker({
+          // position: {lat: 51.5117, lng: -0.1275},
+          position: {lat: walls.lat, lng: walls.lng},
+          map: googleMap,
+          animation: google.maps.Animation.DROP
+        })
+
+        infoWindow = new google.maps.InfoWindow({
+          content: '<div class="info-window"><h4>Charring Cross </h4></div>'
+        })
+
+        marker.addListener('click', function(){
+          infoWindow.open(googleMap,marker);
+          googleMap.panTo(marker.position);
+          googleMap.setZoom(14);
+        })
+
+
     })
 
-    infoWindow = new google.maps.InfoWindow({
-      content: '<div class="info-window"><h4>Charring Cross </h4></div>'
-    })
 
-    marker.addListener('click', function(){
-      infoWindow.open(googleMap,marker);
-      googleMap.panTo(marker.position);
-      googleMap.setZoom(14);
-    })
+    // var markers = propertyData.map(function(property){
 
+    //   // var marker = new google.maps.Marker({
+    //     position: {lat: property.lat, lng: property.lng},
+    //     // animation: google.maps.Animation.DROP,
+    //     // map: map
+    //   });
 
 
 
