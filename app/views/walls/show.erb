@@ -7,9 +7,8 @@
 
 
   <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-8">
 
-    <h3 id="aboutuser">about wall</h3>
 
     <% if @wall.image %>
     <img class="media-object" src="<%= @wall.image %>" alt="<%= @wall.title %>'s image">
@@ -18,17 +17,27 @@
     <% end %>
 
     </div>
-  </div>
 
-    <div class="col-md-6">
 
-      <p>location: <%= @wall.city %></p>
+    <div class="col-md-4">
 
-      <p><strong><a href="/users/<%= @wall.owner_id %>">find out more about the owner</a></strong></p>
+    <h3 id="aboutuser">about wall</h3>
+
+    <dl class="dl-horizontal" id="testid">
+      <dt>location:</dt>
+      <dd> <%= @wall.city   %> </dd><br>
+      <dt>wall owner:</dt>
+      <dd> <a href="/users/<%= @wall.owner_id %>"> <%= @wall.owner.username %> </a>  </dd>
+    </dl>
+  
+
+    
+
+      <p><strong></strong></p>
 
 
       <% if !!(@wall.owner_id.present? && @wall.artist_id.present?) %>
-        <p>painted by artist: <%= @wall.artist_id %></p>
+        <p>painted by artist: <%= @wall.artist.username %></p>
       <% end %>
 
       <p>my artist and owner! (link profile pics to both here): <%= @wall.owner_id %></p>
@@ -54,7 +63,13 @@
   </form>
 
   <% else %>
+
+  <% if !(@wall.owner_id.present? && @wall.artist_id.present?) %>
+
   <p><strong><a href="mailto:<%=@user.email%>?Subject=i'd like to paint your wall" id="email_form">&lt; request to paint this wall &gt;</a></strong></p>
+
+  <% end %>
+
   <% end %>
 
 </div>
