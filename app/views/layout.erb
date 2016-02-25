@@ -32,12 +32,13 @@
           
               <% if is_logged_in? %>
 
-                <% if current_user.user_type == "artist" %>
+                <% if is_artist? %>
                   <li><a href="/walls">sparewalls</a></li>
                   <li><a href="/wallsmap">see map</a></li>
                   <li><a href="/completed_walls">completed walls</a></li>
                 <% else %>
                   <li><a href="/users">artists</a></li>
+                  <li><a href="/wallsmap">see map</a></li>
                   <li><a href="/completed_walls">completed walls</a></li>
               <% end %>  
 
@@ -52,6 +53,7 @@
                   </li>
 
               <% else %>
+
               <li><a href="/completed_walls">completed walls</a></li>
               <li><a href="/register">register</a></li>
               <li><a href="/login">login</a></li>

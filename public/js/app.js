@@ -70,21 +70,22 @@ $( document ).ready(function() {
   if ($propertyForm.length){
 
     var gcoder = new google.maps.Geocoder();
-    var $fields = $propertyForm.find('input');
+    var $fields = $propertyForm.find('input.address');
 
     $fields.on('blur', function(){
-      var formData = $propertyForm.serializeArray();
-      var address = formData.map(function(dataObj){
-        return dataObj.value;
-      }).filter(function(value){
+      var address = $fields.toArray().map(function(elem) {
+        return elem.value;
+      }).filter(function(value) {
         return !!value;
       }).join(', ');
+
+      console.log(address);
 
       gcoder.geocode({address: address}, function(results, status){
         if (status === "OK"){
           var location = results[0].geometry.location;
-          $fields.filter('[name="wall[lat]"]').val(location.lat());
-          $fields.filter('[name="wall[lng]"]').val(location.lng());
+          $propertyForm.find('[name="wall[lat]"]').val(location.lat());
+          $propertyForm.find('[name="wall[lng]"]').val(location.lng());
         }
         console.log(results, status);
       });

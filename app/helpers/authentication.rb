@@ -8,6 +8,10 @@ helpers do
     !!current_user
   end
 
+  def is_artist?
+    current_user.user_type == "artist"
+  end
+
   def authorize!
     unless is_logged_in?
       flash[:danger] = "You must be logged in to see this page"
