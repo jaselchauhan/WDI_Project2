@@ -4,4 +4,14 @@ body { background-color: #FCFCFC; }
 
 #property-map { height: 600px; margin: 20px 0; }
 
+.media-list { position: relative; }
+
+.homepage-body { background-image: url("http://static1.squarespace.com/static/55c0b54ee4b0240bae3b0955/t/55c0cf3be4b0cbff977368f4/1438699323055/Brick-Wall-Texture.jpg"); }
+
+.jumbotron { background: rgba(230, 230, 230, 0.5); margin-top: 240px; text-align: center; }
+
+#main-title-header { text-shadow: 1px 1px #222222; }
+
+.panel-footer { position: absolute; bottom: 0px; width: 100%; }
+
 /*# sourceMappingURL=style.css.map */
