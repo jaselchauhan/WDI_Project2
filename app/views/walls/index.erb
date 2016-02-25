@@ -1,19 +1,30 @@
-<div class="container-fluid" id="gridwalls">
+<div class="container-fluid">
 
-<h1 id="wallsindextitle" class="page-header">spare walls</h1>
+<div id="toggle_menu">
+  <h1 id="wallsindextitle" class="page-header">spare walls</h1>
 
-<form id="search-form" class="form-inline" action="/walls">
-  <input type="text" name="search" placeholder="Search" value="<%= params[:search] %>" class="form-control">
-  <button class="btn btn-primary" id="search_button">Go</button>
-  <a href="/walls" class="btn btn-primary" role="button" id="back_search_button"> Back to all walls </a>
-</form><br><br>
+  <div>
+  <form id="search-form" class="form-inline" action="/walls">
+    <input type="text" name="search" placeholder="Search" value="<%= params[:search] %>" class="form-control">
+    <button class="btn btn-primary" id="search_button">Go</button>
+    <a href="/walls" class="btn btn-primary" role="button" id="back_search_button"> Back to all walls </a>
+  </form><br><br>
 
-<div class="row">
-  <% @walls.each do |wall| %>
+  <div id="view_btns">
+    <a href='#' class="btn btn-primary" id="grid_btn">&lt; grid view &gt;</a>
+    <a href='#' class="btn btn-primary" id="map_btn">&lt; map view &gt;</a>
+  </div>
+  </div>
 
-    <% if !(wall.owner_id.present? && wall.artist_id.present?) %>
+</div>
 
-    <div class="col-xs-12 col-md-4">
+  <div id="gridmaps">
+    <div class="row">
+      <% @walls.each do |wall| %>
+
+      <% if !(wall.owner_id.present? && wall.artist_id.present?) %>
+
+      <div class="col-xs-12 col-md-4">
         <ul class="media-list">
           <li>
             <div>
@@ -25,33 +36,33 @@
                 <img class="wallsidx" src="<%= wall.image %>" width="100%">
               </a>
               <p><%= wall.city %><p>
-            </div>
-          </li>
+              </div>
+            </li>
           </ul>
         </div>
+        <% end %>
+        <% end %>
+
+      </div>
+    </div>
+
+    <div id="mapwalls">
+
+      <% if is_artist? %>
+      <h3 class="page-header" id="maptitle">map of sparewalls</h3>
+      <% else %>
+      <h3 class="page-header">map of completed walls</h3>
       <% end %>
-  <% end %>
-<!-- </ul> -->
-</div>
 
 
-<div class="container-fluid" id="mapwalls">
+      <input type="hidden" name="walls-data" value= '<%= @walls.to_json %>'>
 
-<% if is_artist? %>
-<h1 class="page-header">map of sparewalls</h1>
-<% else %>
-<h1 class="page-header">map of completed walls</h1>
-<% end %>
+      <div id="property-map"></div>
+
+    </div>
 
 
-<input type="hidden" name="walls-data" value= '<%= @walls.to_json %>'>
-
-  <div id="property-map"></div>
-
-</div>
-
-
-</div>
+  </div>
 
 
 

@@ -8,6 +8,9 @@ $( document ).ready(function() {
 
   var markers = [];
 
+  var a = 2;
+
+
   function closeAllInfoWindows() {
     markers.forEach(function(marker) {
       marker.infoWindow.close();
@@ -96,14 +99,31 @@ $( document ).ready(function() {
 
 
 
+  function show_grid(){
+      $("#gridmaps").delay(500).fadeToggle(); 
+  }
+
+  function show_maps(){
+      $("#mapwalls").delay(500).fadeToggle(); 
+  }
+
+
+  $("#grid_btn").click(show_grid);
+
+  $("#map_btn").click(show_grid);
 
 
 
 
+  var $content = $('#toggle_menu');
 
+  $content.children('div').hide();
 
-
-
+  
+  $content.click(function(){
+      console.log("the button is responding to a click");
+      $content.children('div').slideToggle();
+  });
 
 
 

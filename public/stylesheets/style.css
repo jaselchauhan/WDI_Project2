@@ -16,7 +16,7 @@ h4 { text-align: center; }
 
 .jumbotron { background: rgba(230, 230, 230, 0.5); margin-top: 240px; text-align: center; }
 
-.page-header { text-align: center; border-bottom: 2px solid black; }
+.page-header { text-align: center; border-bottom: 2px solid black; margin-top: 0px; }
 
 #main-title-header { text-shadow: 1px 1px #222222; }
 
@@ -34,7 +34,7 @@ h4 { text-align: center; }
 
 #contactbtn { margin-left: 100px; }
 
-#search-form { margin-left: 30%; }
+#search-form { margin-left: 33%; }
 
 #add_a_wall { margin-left: 120px; }
 
@@ -47,5 +47,9 @@ h4 { text-align: center; }
 .navbar-default { background: transparent; }
 
 .wallsidx { margin: 15px; }
+
+#view_btns { margin-left: 40%; }
+
+#maptitle { margin-top: 20px; }
 
 /*# sourceMappingURL=style.css.map */
