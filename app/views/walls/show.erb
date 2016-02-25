@@ -1,29 +1,42 @@
-<h2><%= @wall.title %></h2>
-<% if @wall.image %>
+<div class="container-fluid">
+
+  <h2><%= @wall.title %>
+
+  <% if !!(@wall.owner_id.present? && @wall.artist_id.present?) %>
+
+    (painted)
+
+  <% end %>
+
+
+  </h2>
+  <% if @wall.image %>
   <img class="media-object" src="<%= @wall.image %>" alt="<%= @wall.title %>'s image">
-<% else %>
+  <% else %>
   <img class="media-object" src="/images/default.png" alt="<%= @wall.title %>'s image">
-<% end %>
+  <% end %>
 
-<br><br>
-<p>location: <%= @wall.city %></p>
+  <br><br>
+  <p>location: <%= @wall.city %></p>
 
-<p><strong> wall belongs to owner of ID: <%=@wall.owner_id %> <a href="/users/<%= @wall.owner_id %>">find out more about the owner</a></strong></p>
+  <p><strong> wall belongs to owner of ID: <%=@wall.owner_id %> <a href="/users/<%= @wall.owner_id %>">find out more about the owner</a></strong></p>
 
-<p>artist is: <%= @wall.artist_id %></p>
+  <p>artist is: <%= @wall.artist_id %></p>
 
-<p>my artist and owner! (link profile pics to both here): <%= @wall.owner_id %></p>
+  <p>my artist and owner! (link profile pics to both here): <%= @wall.owner_id %></p>
 
-<% if current_user.user_type == "wall_owner" %>
-<p><strong><a href="/walls/<%=@wall.id %>/edit">edit/update this wall</a></strong></p>
+  <% if current_user.user_type == "wall_owner" %>
+  <p><strong><a href="/walls/<%=@wall.id %>/edit">edit/update this wall</a></strong></p>
 
-<form action="/walls/<%= @wall.id %>/delete" method="post">
-  <input id="hidden" type="hidden" name="_method" value="delete">
-  <input type="submit" value="delete">
-</form>
+  <form action="/walls/<%= @wall.id %>/delete" method="post">
+    <input id="hidden" type="hidden" name="_method" value="delete">
+    <input type="submit" value="delete">
+  </form>
 
-<% else %>
-<p><strong><a href="mailto:<%=@user.email%>?Subject=i'd like to paint your wall" id="email_form">&lt; request to paint this wall &gt;</a></strong></p>
-<% end %>
+  <% else %>
+  <p><strong><a href="mailto:<%=@user.email%>?Subject=i'd like to paint your wall" id="email_form">&lt; request to paint this wall &gt;</a></strong></p>
+  <% end %>
+
+</div>
 
 
