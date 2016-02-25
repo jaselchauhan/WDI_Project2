@@ -20,8 +20,12 @@ body { background-color: #FCFCFC; }
 
 #user-info { margin-left: 50px; }
 
-#aboutuser { margin-left: 50px; }
+#aboutuser { margin-left: 140px; }
 
 #view-walls { text-align: center; }
+
+#userbio { text-align: center; }
+
+#contactbtn { margin-left: 120px; }
 
 /*# sourceMappingURL=style.css.map */
