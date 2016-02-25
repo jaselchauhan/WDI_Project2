@@ -231,7 +231,7 @@ end
 [
   { title: "I want my front door painted - any takers?",
     is_painted: false, 
-    image: 'http://image.naldzgraphics.net/2011/02/24-grungy-brick-wall.jpg',
+    image: 'grungy-brick-wall.jpg',
     city: "london",
     owner_id: "9",
     artist_id: "",
