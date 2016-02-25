@@ -487,12 +487,12 @@ end
     is_painted: true, 
     image: "/images/wall.jpg",
     city: "london",
-    owner_id: "11",
+    owner_id: "10",
     artist_id: "1" ,
     lat:51.4966 ,
     lng: -0.1448
 
-  },
+  }
 
 
 ].each do |wall|
