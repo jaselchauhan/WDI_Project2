@@ -1,82 +1,103 @@
 <div class="container-fluid">
 
 
-<% if current_user.user_type == "artist" %>
+  <% if current_user.user_type == "artist" %>
   <h2>wall owners</h2>
-<% else %>
+  <% else %>
   <h2>artists</h2>
-<% end %>
+  <% end %>
 
-<% if current_user.user_type == "artist" %>
 
-      <% @users.each do |user| %>
-    
-      <% if user.user_type == "wall_owner" %>
 
-      <div class="row">
-      <ul class="media-list">
-        <li class="media">
-          <div class="media-left">
-            <a href="/users/<%= user.id %>">
-              <% if user.image %>
-                <img class="media-object img-rounded" src="<%= user.image %>" alt="<%= user.username %>'s image">
-              <% else %>
-                <img class="media-object" src="/images/default.png" alt="<%= user.username %>'s image">
-              <% end %>
-            </a>
-          </div>
-          <div class="media-body">
-            <a href="/users/<%= user.id %>">
-              <h4 class="media-heading"><%= user.username %></h4>
-            </a>
+
+  <% if current_user.user_type == "artist" %>
+
+  <div class="row">
+
+  <% @users.each do |user| %>
+
+  <% if user.user_type == "wall_owner" %>
+
+  <div class="col-xs-12 col-md-4">
+    <ul class="media-list">
+      <li class="media">
+
+
+
+        <div class="media-left">
+          <a href="/users/<%= user.id %>">
+
+            <% if user.image %>
+            <img class="media-object img-rounded" src="<%= user.image %>" alt="<%= user.username %>'s image">
+            <% else %>
+            <img class="media-object" src="/images/default.png" alt="<%= user.username %>'s image">
+            <% end %>
+
+          </a>
+        </div>
+
+
+        <div class="media-body">
+          <a href="/users/<%= user.id %>">
+            <h4 class="media-heading"><%= user.username %></h4>
+          </a>
           
-        </li>
-          </div>
-        </ul>
+      </li>
+    </ul>
+ </div>
 
-      <% end %>
+    <% end %>
 
-      <% end %>
+    <% end %>
+    </div>
 
+    <% else %>
 
-<% else %>
+    <div class="row">
+
 
     <% @users.each do |user| %>
 
     <% if user.user_type == "artist" %>
 
-    <div class="row">
-    <ul class="media-list">
-      <li class="media">
-        <div class="media-left">
-          <a href="/users/<%= user.id %>">
-            <% if user.image %>
+    <div class="col-xs-12 col-md-4">
+      <ul class="media-list">
+        <li class="media">
+
+          <div class="media-left">
+            <a href="/users/<%= user.id %>">
+
+              <% if user.image %>
               <img class="media-object img-rounded" src="<%= user.image %>" alt="<%= user.username %>'s image">
-            <% else %>
+              <% else %>
               <img class="media-object" src="/images/default.png" alt="<%= user.username %>'s image">
-            <% end %>
-          </a>
-        </div>
-        <div class="media-body">
-          <a href="/users/<%= user.id %>">
-            <h4 class="media-heading"><%= user.username %></h4>
-          </a>
-         
-      </li>
-        </div>
+              <% end %>
+
+            </a>
+          </div>
+
+          <div class="media-body">
+            <a href="/users/<%= user.id %>">
+              <h4 class="media-heading"><%= user.username %></h4>
+            </a>
+
+          </li>
       </ul>
+      </div>
 
-    <% end %>
+      <% end %>
 
-    <% end %>
+      <% end %>
 
-<% end %>
+      </div>
+
+      <% end %>
 
 
-   
+
+
+    </div>
 
   </div>
-
-</div>
 
 
