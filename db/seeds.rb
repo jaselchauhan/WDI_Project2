@@ -231,7 +231,7 @@ end
 [
   { title: "I want my front door painted - any takers?",
     is_painted: false, 
-    image: 'grungy-brick-wall.jpg',
+    image: '/images/grungy-brick-wall.jpg',
     city: "london",
     owner_id: "9",
     artist_id: "",
@@ -242,7 +242,7 @@ end
  
   { title: "This is my house wall", 
     is_painted: false, 
-    image: "http://image.naldzgraphics.net/2011/02/24-grungy-brick-wall.jpg",
+    image: "/images/grungy-brick-wall.jpg",
     city: "london",
     owner_id: "10",
     artist_id: "",
@@ -254,7 +254,7 @@ end
 
   { title: "wall in london", 
     is_painted: false, 
-    image: "http://image.naldzgraphics.net/2011/02/24-grungy-brick-wall.jpg",
+    image: "/images/grungy-brick-wall.jpg",
     city: "stratford",
     owner_id: "10",
     artist_id: "",
@@ -266,7 +266,7 @@ end
 
   { title: "garage needs a fresh coat", 
     is_painted: false, 
-    image: "http://image.naldzgraphics.net/2011/02/24-grungy-brick-wall.jpg",
+    image: "/images/grungy-brick-wall.jpg",
     city: "london",
     owner_id: "",
     artist_id: "",
@@ -278,7 +278,7 @@ end
 
   { title: "needs some paint", 
     is_painted: false, 
-    image: "http://image.naldzgraphics.net/2011/02/24-grungy-brick-wall.jpg",
+    image: "/images/grungy-brick-wall.jpg",
     city: "stratford",
     owner_id: "9",
     artist_id: "",
@@ -290,7 +290,7 @@ end
 
   { title: "paint me!", 
     is_painted: false, 
-    image: "http://image.naldzgraphics.net/2011/02/24-grungy-brick-wall.jpg",
+    image: "/images/grungy-brick-wall.jpg",
     city: "london",
     owner_id: "11",
     artist_id: "",
@@ -312,7 +312,7 @@ end
     
   { title: "up for decoration", 
     is_painted: false, 
-    image: "http://image.naldzgraphics.net/2011/02/24-grungy-brick-wall.jpg",
+    image: "/images/grungy-brick-wall.jpg",
     city: "london",
     owner_id: "13",
     artist_id: "",
@@ -322,7 +322,7 @@ end
   },  
   { title: "my front wall is a canvas", 
     is_painted: false, 
-    image: "http://image.naldzgraphics.net/2011/02/24-grungy-brick-wall.jpg",
+    image: "/images/grungy-brick-wall.jpg",
     city: "london",
     owner_id: "14",
     artist_id: "",
@@ -332,7 +332,7 @@ end
   },  
   { title: "up for painting?", 
     is_painted: false, 
-    image: "http://image.naldzgraphics.net/2011/02/24-grungy-brick-wall.jpg",
+    image: "/images/grungy-brick-wall.jpg",
     city: "london",
     owner_id: "15",
     artist_id: "",
@@ -342,7 +342,7 @@ end
   },  
   { title: "artist required", 
     is_painted: false, 
-    image: "http://image.naldzgraphics.net/2011/02/24-grungy-brick-wall.jpg",
+    image: "/images/grungy-brick-wall.jpg",
     city: "london",
     owner_id: "16",
     artist_id: "",
@@ -352,7 +352,7 @@ end
   },  
   { title: "this wall needs painting", 
     is_painted: false, 
-    image: "http://image.naldzgraphics.net/2011/02/24-grungy-brick-wall.jpg",
+    image: "/images/grungy-brick-wall.jpg",
     city: "london",
     owner_id: "9",
     artist_id: "",
@@ -362,7 +362,7 @@ end
   },  
   { title: "looking for someone to decorate wall", 
     is_painted: false, 
-    image: "http://image.naldzgraphics.net/2011/02/24-grungy-brick-wall.jpg",
+    image: "/images/grungy-brick-wall.jpg",
     city: "london",
     owner_id: "9",
     artist_id: "",
@@ -372,7 +372,7 @@ end
   },  
   { title: "what a wall", 
     is_painted: false, 
-    image: "http://image.naldzgraphics.net/2011/02/24-grungy-brick-wall.jpg",
+    image: "/images/grungy-brick-wall.jpg",
     city: "london",
     owner_id: "9",
     artist_id: "",
@@ -382,7 +382,7 @@ end
   },  
   { title: "needs decoration", 
     is_painted: false, 
-    image: "http://image.naldzgraphics.net/2011/02/24-grungy-brick-wall.jpg",
+    image: "/images/grungy-brick-wall.jpg",
     city: "london",
     owner_id: "9",
     artist_id: "",
@@ -392,7 +392,7 @@ end
   },  
   { title: "paint me", 
     is_painted: false, 
-    image: "http://image.naldzgraphics.net/2011/02/24-grungy-brick-wall.jpg",
+    image: "/images/grungy-brick-wall.jpg",
     city: "london",
     owner_id: "9",
     artist_id: "",
@@ -402,7 +402,7 @@ end
   },  
   { title: "wall in london", 
     is_painted: false, 
-    image: "http://image.naldzgraphics.net/2011/02/24-grungy-brick-wall.jpg",
+    image: "/images/grungy-brick-wall.jpg",
     city: "london",
     owner_id: "10",
     artist_id: "",
@@ -412,7 +412,7 @@ end
   },  
   { title: "paint me", 
     is_painted: false, 
-    image: "http://image.naldzgraphics.net/2011/02/24-grungy-brick-wall.jpg",
+    image: "/images/grungy-brick-wall.jpg",
     city: "london",
     owner_id: "10",
     artist_id: "",
@@ -422,7 +422,7 @@ end
   },  
   { title: "london wall", 
     is_painted: false, 
-    image: "http://image.naldzgraphics.net/2011/02/24-grungy-brick-wall.jpg",
+    image: "/images/grungy-brick-wall.jpg",
     city: "stratford",
     owner_id: "10",
     artist_id: "",
@@ -432,7 +432,7 @@ end
   },  
   { title: "artist wanted - alive", 
     is_painted: false, 
-    image: "http://image.naldzgraphics.net/2011/02/24-grungy-brick-wall.jpg",
+    image: "/images/grungy-brick-wall.jpg",
     city: "london",
     owner_id: "14",
     artist_id: "",
@@ -442,7 +442,7 @@ end
   },  
   { title: "graffiti", 
     is_painted: false, 
-    image: "http://image.naldzgraphics.net/2011/02/24-grungy-brick-wall.jpg",
+    image: "/images/grungy-brick-wall.jpg",
     city: "stratford",
     owner_id: "14",
     artist_id: "",
@@ -452,7 +452,7 @@ end
   },  
   { title: "paint", 
     is_painted: false, 
-    image: "http://image.naldzgraphics.net/2011/02/24-grungy-brick-wall.jpg",
+    image: "/images/grungy-brick-wall.jpg",
     city: "stratford",
     owner_id: "14",
     artist_id: "",
@@ -463,7 +463,7 @@ end
     
   { title: "paint me!", 
     is_painted: false, 
-    image: "http://image.naldzgraphics.net/2011/02/24-grungy-brick-wall.jpg",
+    image: "/images/grungy-brick-wall.jpg",
     city: "london",
     owner_id: "10",
     artist_id: "",
@@ -477,30 +477,7 @@ end
   Wall.create!(wall)
 end
 
-[
-  { title: "I want my front door painted - any takers?",
-    comment: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente cumque ullam accusamus, iste, quo neque rerum reiciendis voluptatem veniam inventore, accusantium labore perspiciatis ex voluptatibus fugiat dolore soluta. Repellat, sunt?"
 
-  },
- 
-  { title: "This is my house wall", 
-   comment: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa maiores, rem! Soluta et voluptas, libero porro, placeat harum doloribus ipsam nesciunt dicta alias, atque aliquam odio laborum enim, sed ea."
-
-  },
-
-  { title: "garage needs a fresh coat", 
-   comment: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit at soluta quibusdam fuga minus, quas facilis consequatur veritatis asperiores nihil laboriosam rerum maiores dolore ex magnam ratione tenetur quos ipsum!"
-
-  },
-  
-  { title: "paint me!", 
-    comment: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit accusamus, non dolorum fuga, est ipsa quasi odit error, doloremque aliquid explicabo nesciunt voluptatum iste iusto ex recusandae eaque, a adipisci."
-
-  }
-
-].each do |comment|
-  Comment.create!(comment)
-end
 
 
 
