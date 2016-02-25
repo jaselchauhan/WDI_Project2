@@ -8,7 +8,7 @@
 
     <h3 id="aboutuser">about</h3>
       <% if @user.image %>
-      <img class="media-object" src="<%= @user.image %>" alt="<%= @user.username %>'s image">
+      <img class="media-object" src="<%= @user.image %>" alt="<%= @user.username %>'s image" width="300px" height:"300px">
       <% else %>
       <img class="media-object" src="/images/default.png" alt="<%= @user.username %>'s image">
       <% end %>
@@ -40,7 +40,7 @@
 
 <br><br>
 
-<% if current_user.user_type == "wall_owner" %>
+<% if @user.user_type == "wall_owner" %>
 
   <h4>Owned Walls</h4>
   <div class="row">

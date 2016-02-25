@@ -3,34 +3,31 @@
 
   <h1 class="page-header">completed walls area</h1>
 
-    <div class="row grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 200 }'>
-      <% @walls.each do |wall| %>
-      <div>
-        <% if !!(wall.owner_id.present? && wall.artist_id.present?) %>
+  <div class="row">
+    <% @walls.each do |wall| %>
+    <div>
+      <% if !!(wall.owner_id.present? && wall.artist_id.present?) %>
 
-          <div class="col-md-6 grid-item">
-              <ul class="media-list">
-                <li class="media">
-                  <div class="media-left">
-                    <a href="/walls/<%= wall.id %>">
-                    </a>
-                  </div>
-                  <div class="media-body">
-                    <a href="/walls/<%= wall.id %>">
-                      <img src="<%= wall.image %>" width="440px">
-                    </a>
-                  </div>
-                </li>
-                </ul>
-              </div>
-
-        <% end %>
-
+      <div class="col-md-6">
+        <ul class="media-list">
+          <li class="media">
+            <div class="media-left">
+              <a href="/walls/<%= wall.id %>">
+              </a>
+            </div>
+            <div class="media-body" id="completedpic">
+              <a href="/walls/<%= wall.id %>">
+              <img src="<%= wall.image %>" width="440px" height:"440px">
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
       <% end %>
-    <!-- </ul> -->
+      <% end %>
     </div>
+
+  </div>
 
 
 </div>
-
-<div id="map"></div><br>

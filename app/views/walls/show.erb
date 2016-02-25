@@ -27,22 +27,23 @@
       <dt>location:</dt>
       <dd> <%= @wall.city   %> </dd><br>
       <dt>wall owner:</dt>
-      <dd> <a href="/users/<%= @wall.owner_id %>"> <%= @wall.owner.username %> </a>  </dd>
-    </dl>
-  
-
-    
-
-      <p><strong></strong></p>
-
+      <dd><a href="/users/<%= @wall.owner_id %>"><img src="<%= @wall.owner.image %>" height="100px" width="100px"></a> </dd>
+      <br><br><br>
 
       <% if !!(@wall.owner_id.present? && @wall.artist_id.present?) %>
-        <p>painted by artist: <%= @wall.artist.username %></p>
+        <dt>painted by:  </dt>
+        </dd><a href="/users/<%= @wall.artist_id %>"><img src="<%=   @wall.artist.image %>" height="100px" width="100px"></a></dd>
       <% end %>
 
-      <p>my artist and owner! (link profile pics to both here): <%= @wall.owner_id %></p>
+    </dl>
 
-
+      <% if current_user.user_type == "wall_owner" %>
+      <% else %>
+      <% if !(@wall.owner_id.present? && @wall.artist_id.present?) %>
+        
+      <p id="request"><strong><a href="mailto:<%=@wall.owner.email%>?Subject=i'd like to paint your wall" id="email_form">&lt; request to paint this wall &gt;</a></strong></p>
+      <% end %>
+      <% end %>
 
 
     </div>
@@ -51,6 +52,11 @@
 
   <br><br>
   
+
+
+
+
+
 
   <% if current_user.user_type == "wall_owner" %>
   <p><strong><a href="/walls/<%=@wall.id %>/edit">edit/update this wall</a></strong></p>
@@ -62,11 +68,6 @@
 
   <% else %>
 
-  <% if !(@wall.owner_id.present? && @wall.artist_id.present?) %>
-
-  <p><strong><a href="mailto:<%=@wall.owner.email%>?Subject=i'd like to paint your wall" id="email_form">&lt; request to paint this wall &gt;</a></strong></p>
-
-  <% end %>
 
   <% end %>
 

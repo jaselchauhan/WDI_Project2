@@ -49,7 +49,7 @@ $( document ).ready(function() {
             '<h4>' + walls.title + '</h4>' + 
               // '<form action="/walls/' + walls.id + '" method="POST">' +
               //   '<input type="hidden" name="_method" value="DELETE">' +
-                '<img src="' + walls.image + '" width=150px>' +
+                '<img src="' + walls.image + '" width=150px>' + '<br><br>' +
                 '<a class="btn btn-primary" href="/walls/' + walls.id + '">have a look</a>' + 
               // '<form>' +
             '</div>'
@@ -113,16 +113,19 @@ $( document ).ready(function() {
   $("#map_btn").click(show_grid);
 
 
-
-
   var $content = $('#toggle_menu');
 
   $content.children('div').hide();
 
-  
+  var counter = 2;
+
+
   $content.click(function(){
+      if(counter%2 ===0 ){
       console.log("the button is responding to a click");
       $content.children('div').slideToggle();
+      counter++;
+    }
   });
 
 

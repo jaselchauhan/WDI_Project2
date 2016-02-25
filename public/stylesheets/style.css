@@ -14,7 +14,7 @@ h4 { text-align: center; }
 
 .homepage-body { background-image: url("http://static1.squarespace.com/static/55c0b54ee4b0240bae3b0955/t/55c0cf3be4b0cbff977368f4/1438699323055/Brick-Wall-Texture.jpg"); }
 
-.jumbotron { background: rgba(230, 230, 230, 0.5); margin-top: 240px; text-align: center; }
+.jumbotron { background: rgba(230, 230, 230, 0.8); margin-top: 240px; text-align: center; }
 
 .page-header { text-align: center; border-bottom: 2px solid black; margin-top: 0px; }
 
@@ -44,12 +44,26 @@ h4 { text-align: center; }
 
 .wall_card li a img { width: 100%; height: 164px; }
 
-.navbar-default { background: transparent; }
+.navbar-default { background: transparent; border-bottom: 2px solid black; }
+
+.navbar-brand { color: red; }
 
 .wallsidx { margin: 15px; }
 
 #view_btns { margin-left: 40%; }
 
 #maptitle { margin-top: 20px; }
+
+footer { background-color: rgba(0, 0, 0, 0.5); margin-top: 250px; font-size: 1.5em; text-align: center; padding-top: 50px; color: #ccc; height: 100px; position: relative; bottom: 0px; }
+
+img { box-shadow: 10px 10px 5px #888888; border-radius: 5px; }
+
+img:hover { opacity: 0.4; }
+
+.info-window { height: 200px; width: 250px; }
+
+#completedpic { margin: 15px; }
+
+#request { margin-left: 140px; }
 
 /*# sourceMappingURL=style.css.map */
