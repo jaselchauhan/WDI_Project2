@@ -2,13 +2,11 @@
 
 require_relative "../app/models/user.rb"
 require_relative "../app/models/wall.rb"
-require_relative "../app/models/comment.rb"
 
 APP_ROOT = Pathname.new(File.expand_path('../../', __FILE__))
 
 User.destroy_all
 Wall.destroy_all
-Comment.destroy_all
 
 [
   {
