@@ -393,11 +393,11 @@ end
   { title: "paint me", 
     is_painted: false, 
     image: "/images/brickwall4.jpg",
-    city: "london",
+    city: "birmingham",
     owner_id: "9",
     artist_id: "",
-    lat:51.5352 ,
-    lng: -0.0128
+    lat:52.4777 ,
+    lng: -1.8942
 
   },  
   { title: "wall in london", 
