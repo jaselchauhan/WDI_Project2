@@ -39,20 +39,39 @@
 
 
 <br><br>
+
+<% if current_user.user_type == "wall_owner" %>
+
+  <h4>Owned Walls</h4>
   <div class="row">
-    <div class="col-md-12">
-
-      <h3 id="view-walls">view my walls</h3>   
-
+    <ul>
       <% @user.owned_walls.each do |wall| %>
-      <a href="/walls/<%=wall.id%>"><img src="<%= wall.image %>" width=300px></a>
+      <li class="col-md-4 col-sm-6">
+        <ul class="wall_card">
+          <li><a href="/walls/<%=wall.id%>"><img src="<%= wall.image %>" width=300px></a></li>
+        </ul>
+      </li>
       <% end %>
-
-      <% @user.painted_walls.each do |wall| %>
-      <a href="/walls/<%=wall.id%>"><img src="<%= wall.image %>" width=300px></a>
-      <% end %>
-
-
-    </div>
-
+    </ul>
   </div>
+
+<% else %>
+
+<h4>Painted Walls</h4>
+<div class="row">
+  <ul class="wall_card">
+    <% @user.painted_walls.each do |wall| %>
+    <li class="col-md-4 col-sm-6">
+      <ul class="card">
+        <li><a href="/walls/<%=wall.id%>"><img src="<%= wall.image %>" width=300px></a></li>
+      </ul>
+    </li>
+    <% end %>
+  </ul>
+</div>
+
+<% end %>
+
+
+
+

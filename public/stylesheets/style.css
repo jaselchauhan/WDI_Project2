@@ -1,10 +1,16 @@
 body { background-color: #FCFCFC; }
 
+ul { margin: 0; padding: 0; list-style-type: none; }
+
+h4 { text-align: center; }
+
 .navbar { background-color: #464655; color: #00A676; }
 
 #property-map { height: 600px; margin: 20px 0; }
 
 .media-list { position: relative; }
+
+.media-list li div p { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); color: #fff; font-size: 25px; }
 
 .homepage-body { background-image: url("http://static1.squarespace.com/static/55c0b54ee4b0240bae3b0955/t/55c0cf3be4b0cbff977368f4/1438699323055/Brick-Wall-Texture.jpg"); }
 
@@ -33,5 +39,7 @@ body { background-color: #FCFCFC; }
 #wallsindextitle { margin-left: 38%; }
 
 #add_a_wall { margin-left: 120px; }
+
+.wall_card { margin: 5px; }
 
 /*# sourceMappingURL=style.css.map */
