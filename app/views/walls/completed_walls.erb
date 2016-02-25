@@ -3,15 +3,12 @@
 
   <h1 class="page-header">completed walls area</h1>
 
-
-
-    <div class="row">
+    <div class="row grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 200 }'>
       <% @walls.each do |wall| %>
-
-
+      <div>
         <% if !!(wall.owner_id.present? && wall.artist_id.present?) %>
 
-          <div class="col-md-6">
+          <div class="col-md-6 grid-item">
               <ul class="media-list">
                 <li class="media">
                   <div class="media-left">

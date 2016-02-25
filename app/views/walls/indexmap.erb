@@ -1,6 +1,10 @@
 <div class="container-fluid">
-<h1>see where the sparewalls are</h1>
 
+<% if is_artist? %>
+<h1 class="page-header">map of sparewalls</h1>
+<% else %>
+<h1 class="page-header">map of completed walls</h1>
+<% end %>
 
 
 <input type="hidden" name="walls-data" value= '<%= @walls.to_json %>'>

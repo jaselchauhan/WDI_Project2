@@ -16,7 +16,7 @@ h4 { text-align: center; }
 
 .jumbotron { background: rgba(230, 230, 230, 0.5); margin-top: 240px; text-align: center; }
 
-.page-header { text-align: center; }
+.page-header { text-align: center; border-bottom: 2px solid black; }
 
 #main-title-header { text-shadow: 1px 1px #222222; }
 
@@ -43,5 +43,9 @@ h4 { text-align: center; }
 .test { text-align: left; }
 
 .wall_card { margin: 5px; }
+
+.wall_card li a img { width: 100%; height: 164px; }
+
+.navbar-default { background: transparent; }
 
 /*# sourceMappingURL=style.css.map */

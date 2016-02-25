@@ -1,6 +1,6 @@
 <div class="container-fluid">
 
-<h1 id="wallsindextitle">spare walls</h1>
+<h1 id="wallsindextitle page-header">spare walls</h1>
 
 <form id="search-form" class="form-inline" action="/walls">
   <input type="text" name="search" placeholder="Search" value="<%= params[:search] %>" class="form-control">
@@ -22,7 +22,7 @@
             </div>
             <div>
               <a href="/walls/<%= wall.id %>">
-                <img src="<%= wall.image %>" width="100%">
+                <img src="<%= wall.image %>">
               </a>
               <p><%= wall.city %><p>
             </div>
