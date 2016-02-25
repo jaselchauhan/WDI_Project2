@@ -10,8 +10,18 @@ body { background-color: #FCFCFC; }
 
 .jumbotron { background: rgba(230, 230, 230, 0.5); margin-top: 240px; text-align: center; }
 
+.page-header { text-align: center; }
+
 #main-title-header { text-shadow: 1px 1px #222222; }
 
 .panel-footer { position: absolute; bottom: 0px; width: 100%; }
+
+.media-object { margin-top: 30px; margin-left: 50px; }
+
+#user-info { margin-left: 50px; }
+
+#aboutuser { margin-left: 50px; }
+
+#view-walls { text-align: center; }
 
 /*# sourceMappingURL=style.css.map */
