@@ -299,11 +299,11 @@ end
 
   },
   
-  { title: "completed test wall!", 
+  { title: "completed wall!", 
     is_painted: true, 
     image: "http://pre01.deviantart.net/d68d/th/pre/i/2013/216/5/c/background__painted_brick_wall_by_cesstrelle-d6glbjn.jpg",
     city: "london",
-    owner_id: "12",
+    owner_id: "11",
     artist_id: "1" ,
     lat:51.4966 ,
     lng: -0.1448
@@ -469,6 +469,28 @@ end
     artist_id: "",
     lat:51.5900 ,
     lng: -0.0780
+
+  },
+
+  { title: "want something groovy", 
+    is_painted: true, 
+    image: "/images/wall2.jpg",
+    city: "london",
+    owner_id: "14",
+    artist_id: "1" ,
+    lat:51.4966 ,
+    lng: -0.1448
+
+  },
+
+  { title: "lively wall wanted!", 
+    is_painted: true, 
+    image: "/images/wall.jpg",
+    city: "london",
+    owner_id: "11",
+    artist_id: "1" ,
+    lat:51.4966 ,
+    lng: -0.1448
 
   },
 
