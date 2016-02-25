@@ -27,7 +27,7 @@
       <dt>location:</dt>
       <dd> <%= @wall.city   %> </dd><br>
       <dt>wall owner:</dt>
-      <dd><a href="/users/<%= @wall.owner_id %>"><img src="<%= @wall.owner.image %>" height="100px" width="100px"></a> </dd>
+      <dd><a href="/users/<%= @wall.owner_id %>"><img src="<%= @wall.owner.image %>" height="100px" width="100px" class="wallprofpic"></a> </dd>
       <br><br><br>
 
 
@@ -35,7 +35,7 @@
 
       <% if !!(@wall.owner_id.present? && @wall.artist_id.present?) %>
         <dt>painted by:  </dt>
-        </dd><a href="/users/<%= @wall.artist_id %>"><img src="<%=   @wall.artist.image %>" height="100px" width="100px"></a></dd>
+        </dd><a href="/users/<%= @wall.artist_id %>"><img src="<%=   @wall.artist.image %>" height="100px" width="100px" class="wallprofpic>"></a></dd>
       <% end %>
 
     </dl>

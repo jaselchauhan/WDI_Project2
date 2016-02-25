@@ -232,7 +232,7 @@ end
   { title: "I want my front door painted - any takers?",
     is_painted: false, 
     image: '/images/grungy-brick-wall.jpg',
-    city: "london",
+    city: "covent garden",
     owner_id: "9",
     artist_id: "",
     lat:51.5117 ,

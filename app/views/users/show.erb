@@ -48,7 +48,7 @@
       <% @user.owned_walls.each do |wall| %>
       <li class="col-md-4 col-sm-6">
         <ul class="wall_card">
-          <li><a href="/walls/<%=wall.id%>"><img src="<%= wall.image %>" width=300px></a></li>
+          <li><a href="/walls/<%=wall.id%>"><img src="<%= wall.image %>" width="400px" height:"400px"></a></li>
         </ul>
       </li>
       <% end %>
@@ -63,7 +63,7 @@
     <% @user.painted_walls.each do |wall| %>
     <li class="col-md-4 col-sm-6">
       <ul class="card">
-        <li><a href="/walls/<%=wall.id%>"><img src="<%= wall.image %>" width=300px></a></li>
+        <li><a href="/walls/<%=wall.id%>"><img src="<%= wall.image %>" width="400px" height:"400px"></a></li>
       </ul>
     </li>
     <% end %>
