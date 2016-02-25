@@ -9,8 +9,6 @@ get "/walls" do
       @walls = Wall.all
     end 
 
-
-
   # @walls = Wall.all
   erb :"walls/index"
 end
@@ -38,7 +36,6 @@ end
 get "/walls/:id" do
   authorize!
   @wall = Wall.find(params[:id])
-  @user = User.find(params[:id])
   if @wall
     erb :"walls/show"
   else

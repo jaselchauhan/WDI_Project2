@@ -21,7 +21,7 @@
         <dd><%= @user.email %></dd>
       </dl>
 
-      <p id="contactbtn" class="btn btn-default"><strong><a href="mailto:<%=@user.email%>?Subject=i wanna paint your wall!" id="email_form">&lt; Contact Me! &gt;</a></strong></p>
+      <p id="contactbtn" class="btn btn-default"><strong><a href="mailto:<%=@user.email%>?Subject=i wanna paint your wall!" id="email_form">&lt; Contact Me! &gt;</a></strong></p><br><br>
 
       <% if current_user.user_type == "wall_owner" %>
       <strong><p id="add_a_wall"><a href="/walls/new">Add a new wall</a></p></strong>
