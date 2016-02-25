@@ -1,6 +1,6 @@
-<div class="container-fluid">
+<div class="container-fluid" id="gridwalls">
 
-<h1 id="wallsindextitle page-header">spare walls</h1>
+<h1 id="wallsindextitle" class="page-header">spare walls</h1>
 
 <form id="search-form" class="form-inline" action="/walls">
   <input type="text" name="search" placeholder="Search" value="<%= params[:search] %>" class="form-control">
@@ -22,7 +22,7 @@
             </div>
             <div>
               <a href="/walls/<%= wall.id %>">
-                <img src="<%= wall.image %>">
+                <img class="wallsidx" src="<%= wall.image %>" width="100%">
               </a>
               <p><%= wall.city %><p>
             </div>
@@ -33,6 +33,23 @@
   <% end %>
 <!-- </ul> -->
 </div>
+
+
+<div class="container-fluid" id="mapwalls">
+
+<% if is_artist? %>
+<h1 class="page-header">map of sparewalls</h1>
+<% else %>
+<h1 class="page-header">map of completed walls</h1>
+<% end %>
+
+
+<input type="hidden" name="walls-data" value= '<%= @walls.to_json %>'>
+
+  <div id="property-map"></div>
+
+</div>
+
 
 </div>
 

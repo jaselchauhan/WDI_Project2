@@ -36,8 +36,6 @@ h4 { text-align: center; }
 
 #search-form { margin-left: 30%; }
 
-#wallsindextitle { margin-left: 38%; }
-
 #add_a_wall { margin-left: 120px; }
 
 .test { text-align: left; }
@@ -47,5 +45,7 @@ h4 { text-align: center; }
 .wall_card li a img { width: 100%; height: 164px; }
 
 .navbar-default { background: transparent; }
+
+.wallsidx { margin: 15px; }
 
 /*# sourceMappingURL=style.css.map */
