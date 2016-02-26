@@ -487,7 +487,7 @@ end
     is_painted: true, 
     image: "/images/wall.jpg",
     city: "london",
-    owner_id: "10",
+    owner_id: "9",
     artist_id: "1" ,
     lat:51.4966 ,
     lng: -0.1448
