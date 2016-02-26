@@ -15,7 +15,7 @@ h4 {
 }
 
 img {
-  box-shadow: 10px 10px 5px #888888;
+  // box-shadow: 10px 10px 5px #888888;
   border-radius: 5px;
 }
 
@@ -23,6 +23,9 @@ img:hover {
   opacity: 0.4;
 }
 
+.imgshadow {
+  box-shadow: 10px 10px 5px #888888;
+}
 // #map {
 //   height: 300px;
 //   width: 600px;
@@ -84,8 +87,16 @@ img:hover {
   margin-top: 0px;
   font-size: 36px;
   font-weight:700;
+
+  &.button {
+    cursor: pointer;
+  }
+
 }
 
+.page-header.button:hover{
+
+}
 
 #main-title-header{
   text-shadow: 1px 1px #222222;
@@ -119,7 +130,7 @@ img:hover {
 }
 
 #contactbtn{
-  margin-left: 100px;
+ margin-left: 70px;
 }
 
 
@@ -133,7 +144,7 @@ img:hover {
 
 
 #add_a_wall{
-  margin-left: 120px;
+  margin-left: 10px;
 }
 // .view-walls{
 //   font-size: 200px;
@@ -240,6 +251,7 @@ footer {
   color:rgba(1,87,99,1);
   font-size: 36px;
   font-weight: 900;
+  margin-bottom: 15px;
 }
 .navbar-default .navbar-nav>li>a{
   color:rgba(1,87,99,1);

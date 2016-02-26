@@ -1,7 +1,7 @@
 <div class="container-fluid">
 
 <div id="toggle_menu">
-  <h1 id="wallsindextitle" class="page-header">| browse spare walls |</h1>
+  <h1 id="wallsindextitle" class="page-header button">| browse spare walls |</h1>
 
   <div>
   <form id="search-form" class="form-inline" action="/walls">
@@ -33,7 +33,7 @@
             </div>
             <div>
               <a href="/walls/<%= wall.id %>">
-                <img class="wallsidx" src="<%= wall.image %>" width="350px" height="350px">
+                <img class="wallsidx imgshadow" src="<%= wall.image %>" width="350px" height="350px">
               </a>
               <p id="wallscity"><%= wall.city %><p>
               </div>

@@ -4,9 +4,11 @@ ul { margin: 0; padding: 0; list-style-type: none; }
 
 h4 { text-align: center; }
 
-img { box-shadow: 10px 10px 5px #888888; border-radius: 5px; }
+img { border-radius: 5px; }
 
 img:hover { opacity: 0.4; }
+
+.imgshadow { box-shadow: 10px 10px 5px #888888; }
 
 .navbar { background-color: #464655; color: #00A676; }
 
@@ -21,6 +23,7 @@ img:hover { opacity: 0.4; }
 .jumbotron { background: rgba(252, 252, 252, 0.9); margin-top: 240px; text-align: center; }
 
 .page-header { text-align: center; border-bottom: 3px solid #015763; margin-top: 0px; font-size: 36px; font-weight: 700; }
+.page-header.button { cursor: pointer; }
 
 #main-title-header { text-shadow: 1px 1px #222222; }
 
@@ -36,11 +39,11 @@ img:hover { opacity: 0.4; }
 
 #userbio { text-align: center; }
 
-#contactbtn { margin-left: 100px; }
+#contactbtn { margin-left: 70px; }
 
 #search-form { margin-left: 33%; }
 
-#add_a_wall { margin-left: 120px; }
+#add_a_wall { margin-left: 10px; }
 
 .test { text-align: left; }
 
@@ -76,7 +79,7 @@ footer { background-color: rgba(0, 0, 0, 0.5); margin-top: 250px; font-size: 1.5
 
 #wallscity { text-shadow: 4px 4px #222222; font-size: 30px; }
 
-.navbar-default .navbar-brand { color: #015763; font-size: 36px; font-weight: 900; }
+.navbar-default .navbar-brand { color: #015763; font-size: 36px; font-weight: 900; margin-bottom: 15px; }
 
 .navbar-default .navbar-nav > li > a { color: #015763; font-size: 16px; }
 

@@ -164,16 +164,16 @@ $( document ).ready(function() {
 
   $content.children('div').hide();
 
-  var counter = 2;
+  // var counter = 2;
 
 
-  $content.click(function(){
-      if(counter%2 === 0 ){
+  $content.find('.page-header').click(function(){
+      // if(counter%2 === 0 ){
       console.log("the button is responding to a click");
       $content.children('div').slideToggle();
-      counter++;
-      console.log(counter);
-    }
+      // counter++;
+      // console.log(counter);
+    // }
   });
 
 
