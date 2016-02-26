@@ -76,9 +76,9 @@ footer { background-color: rgba(0, 0, 0, 0.5); margin-top: 250px; font-size: 1.5
 
 #wallscity { text-shadow: 4px 4px #222222; font-size: 30px; }
 
-.navbar-default .navbar-brand { color: #015763; font-size: 30px; font-weight: 900; }
+.navbar-default .navbar-brand { color: #015763; font-size: 36px; font-weight: 900; }
 
-.navbar-default .navbar-nav > li > a { color: #015763; }
+.navbar-default .navbar-nav > li > a { color: #015763; font-size: 16px; border-left: 1px solid #015763; }
 
 .profilewalls { border-bottom: 2px solid 33,68,209,1; }
 
