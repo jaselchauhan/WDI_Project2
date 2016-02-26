@@ -301,7 +301,7 @@ end
   
   { title: "completed wall!", 
     is_painted: true, 
-    image: "http://pre01.deviantart.net/d68d/th/pre/i/2013/216/5/c/background__painted_brick_wall_by_cesstrelle-d6glbjn.jpg",
+    image: "/images/street_art.jpg",
     city: "london",
     owner_id: "9",
     artist_id: "1" ,
@@ -474,7 +474,7 @@ end
 
   { title: "want something groovy", 
     is_painted: true, 
-    image: "/images/wall2.jpg",
+    image: "/images/st1.jpg",
     city: "london",
     owner_id: "11",
     artist_id: "1" ,
@@ -485,7 +485,7 @@ end
 
   { title: "lively wall wanted!", 
     is_painted: true, 
-    image: "/images/wall.jpg",
+    image: "/images/st2.jpg",
     city: "london",
     owner_id: "9",
     artist_id: "1" ,

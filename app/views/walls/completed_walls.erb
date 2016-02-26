@@ -17,16 +17,19 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="/images/grungy-brick-wall.jpg" alt="Chania" width:"600px" height:"400px">
+        <img src="/images/st3.jpg" alt="Chania" >
       </div>
 
       <% @walls.each do |wall| %>
       <% if !!(wall.owner_id.present? && wall.artist_id.present?) %>
       <div class="item">
+      <a href="/walls/<%= wall.id %>">
         <img src="<%= wall.image %>" alt="image">
+        </a>
           <div class="carousel-caption">
               <h3><%= wall.title %></h3>
-              <p><%= wall.owner.username %></p>
+              <p>owned by: <%= wall.owner.username %></p><br>
+              <p>painted by: <%= wall.artist.username %></p>
           </div>
       </div>
       <% end %>
