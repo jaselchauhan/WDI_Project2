@@ -18,9 +18,9 @@ img:hover { opacity: 0.4; }
 
 .homepage-body { background-image: url("http://static1.squarespace.com/static/55c0b54ee4b0240bae3b0955/t/55c0cf3be4b0cbff977368f4/1438699323055/Brick-Wall-Texture.jpg"); }
 
-.jumbotron { background: rgba(230, 230, 230, 0.8); margin-top: 240px; text-align: center; }
+.jumbotron { background: rgba(252, 252, 252, 0.9); margin-top: 240px; text-align: center; }
 
-.page-header { text-align: center; border-bottom: 3px solid #015763; margin-top: 0px; font-size: 40px; font-weight: 700; }
+.page-header { text-align: center; border-bottom: 3px solid #015763; margin-top: 0px; font-size: 36px; font-weight: 700; }
 
 #main-title-header { text-shadow: 1px 1px #222222; }
 
@@ -48,7 +48,7 @@ img:hover { opacity: 0.4; }
 
 .wall_card li a img { width: 100%; height: 164px; }
 
-.navbar-default { background: transparent; border-bottom: 4px solid rgba(30, 30, 30, 0.7); }
+.navbar-default { background: rgba(252, 252, 252, 0.9); border-bottom: 4px solid rgba(30, 30, 30, 0.7); }
 
 .navbar-brand { color: red; }
 
@@ -78,7 +78,7 @@ footer { background-color: rgba(0, 0, 0, 0.5); margin-top: 250px; font-size: 1.5
 
 .navbar-default .navbar-brand { color: #015763; font-size: 36px; font-weight: 900; }
 
-.navbar-default .navbar-nav > li > a { color: #015763; font-size: 16px; border-left: 1px solid #015763; }
+.navbar-default .navbar-nav > li > a { color: #015763; font-size: 16px; }
 
 .profilewalls { border-bottom: 2px solid 33,68,209,1; }
 
