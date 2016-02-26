@@ -42,7 +42,7 @@
 
 <% if @user.user_type == "wall_owner" %>
 
-  <h4 class="profilewalls">Owned Walls</h4>
+  <h3 class="profilewalls">Owned Walls</h3>
   <div class="row">
     <ul>
       <% @user.owned_walls.each do |wall| %>
@@ -57,7 +57,7 @@
 
 <% else %>
 
-<h4 class="profilewalls">Painted Walls</h4>
+<h3 class="profilewalls">Painted Walls</h3>
 <div class="row">
   <ul class="wall_card">
     <% @user.painted_walls.each do |wall| %>

@@ -80,7 +80,7 @@ footer { background-color: rgba(0, 0, 0, 0.5); margin-top: 250px; font-size: 1.5
 
 .navbar-default .navbar-nav > li > a { color: #015763; font-size: 16px; }
 
-.profilewalls { border-bottom: 2px solid 33,68,209,1; }
+.profilewalls { border-bottom: 2px solid #015763; text-align: center; padding-bottom: 10px; margin-bottom: 15px; }
 
 .btn-primary { background-color: rgba(1, 87, 99, 0.7); }
 
