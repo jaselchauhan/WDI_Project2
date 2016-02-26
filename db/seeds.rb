@@ -224,15 +224,15 @@ Vice meh green juice, +1 shabby chic vinyl williamsburg venmo mumblecore. Man bu
   User.create!(user)
 end
 
-# image = File.open("#{APP_ROOT}/public/uploads/grungy-brick-wall.jpg");
+# image = File.open("#{APP_ROOT}/public/uploads/wall5.jpg");
 
 # p image
 
 [
   { title: "I want my front door painted - any takers?",
     is_painted: false, 
-    image: '/images/grungy-brick-wall.jpg',
-    city: "covent garden",
+    image: '/images/wall5.jpg',
+    city: "soho",
     owner_id: "9",
     artist_id: "",
     lat:51.5117 ,
@@ -290,7 +290,7 @@ end
 
   { title: "paint me!", 
     is_painted: false, 
-    image: "/images/grungy-brick-wall.jpg",
+    image: "/images/wall5.jpg",
     city: "london",
     owner_id: "11",
     artist_id: "",
@@ -303,7 +303,7 @@ end
     is_painted: true, 
     image: "http://pre01.deviantart.net/d68d/th/pre/i/2013/216/5/c/background__painted_brick_wall_by_cesstrelle-d6glbjn.jpg",
     city: "london",
-    owner_id: "11",
+    owner_id: "9",
     artist_id: "1" ,
     lat:51.4966 ,
     lng: -0.1448
@@ -352,7 +352,7 @@ end
   },  
   { title: "this wall needs painting", 
     is_painted: false, 
-    image: "/images/grungy-brick-wall.jpg",
+    image: "/images/wall5.jpg",
     city: "london",
     owner_id: "9",
     artist_id: "",
@@ -402,7 +402,7 @@ end
   },  
   { title: "wall in london", 
     is_painted: false, 
-    image: "/images/grungy-brick-wall.jpg",
+    image: "/images/wall5.jpg",
     city: "london",
     owner_id: "10",
     artist_id: "",
@@ -452,7 +452,7 @@ end
   },  
   { title: "paint", 
     is_painted: false, 
-    image: "/images/grungy-brick-wall.jpg",
+    image: "/images/wall5.jpg",
     city: "stratford",
     owner_id: "14",
     artist_id: "",
@@ -476,7 +476,7 @@ end
     is_painted: true, 
     image: "/images/wall2.jpg",
     city: "london",
-    owner_id: "14",
+    owner_id: "11",
     artist_id: "1" ,
     lat:51.4966 ,
     lng: -0.1448
@@ -492,7 +492,7 @@ end
     lat:51.4966 ,
     lng: -0.1448
 
-  }
+  },
 
 
 ].each do |wall|

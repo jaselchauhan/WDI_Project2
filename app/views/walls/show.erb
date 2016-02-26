@@ -44,7 +44,7 @@
       <% else %>
       <% if !(@wall.owner_id.present? && @wall.artist_id.present?) %>
         
-      <p id="request" class="btn btn-default"><strong><a href="mailto:<%=@wall.owner.email%>?Subject=i'd like to paint your wall" id="email_form">&lt; request to paint this wall &gt;</a></strong></p>
+      <p id="request"><strong><a class="btn btn-primary" href="mailto:<%=@wall.owner.email%>?Subject=i'd like to paint your wall">&lt; request to paint this wall &gt;</a></strong></p>
       <% end %>
       <% end %>
 

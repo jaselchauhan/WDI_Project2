@@ -1,13 +1,13 @@
 <div class="container-fluid">
 
 <div id="toggle_menu">
-  <h1 id="wallsindextitle" class="page-header">spare walls</h1>
+  <h1 id="wallsindextitle" class="page-header">browse spare walls</h1>
 
   <div>
   <form id="search-form" class="form-inline" action="/walls">
     <input type="text" name="search" placeholder="Search" value="<%= params[:search] %>" class="form-control">
-    <button class="btn btn-primary" id="search_button">Go</button>
-    <a href="/walls" class="btn btn-primary" role="button" id="back_search_button"> Back to all walls </a>
+    <button class="btn btn-primary" id="search_button">go</button>
+    <a href="/walls" class="btn btn-primary" role="button" id="back_search_button"> back to all walls </a>
   </form><br><br>
 
   <div id="view_btns">
@@ -49,9 +49,9 @@
     <div id="mapwalls">
 
       <% if is_artist? %>
-      <h3 class="page-header" id="maptitle">map of sparewalls</h3>
+      <h3 id="maptitle">map of sparewalls</h3>
       <% else %>
-      <h3 class="page-header">map of completed walls</h3>
+      <h3>map of completed walls</h3>
       <% end %>
 
 

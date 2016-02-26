@@ -168,10 +168,11 @@ $( document ).ready(function() {
 
 
   $content.click(function(){
-      if(counter%2 ===0 ){
+      if(counter%2 === 0 ){
       console.log("the button is responding to a click");
       $content.children('div').slideToggle();
       counter++;
+      console.log(counter);
     }
   });
 

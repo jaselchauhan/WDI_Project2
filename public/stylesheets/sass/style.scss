@@ -1,5 +1,6 @@
 body {
   background-color: #FCFCFC;
+  font-family: 'Play', sans-serif;
 
 }
 
@@ -79,8 +80,10 @@ img:hover {
 
 .page-header{
   text-align:center;
-  border-bottom: 2px solid black;
+  border-bottom: 3px solid rgba(1,87,99,1);
   margin-top: 0px;
+  font-size: 40px;
+  font-weight:700;
 }
 
 
@@ -169,6 +172,9 @@ img:hover {
 
 #maptitle{
   margin-top: 20px;
+  text-align:center;
+  padding-bottom: 10px;
+  border-bottom: 2px solid black;
 }
 
 footer {
@@ -223,27 +229,27 @@ footer {
 }
 
 
-.navbar .nav > li > a {
-
-
-}
-
-
 #wallscity{
   text-shadow: 4px 4px #222222;
   font-size: 30px;
 }
 
-// .wallprofpic:hover img{
-//   transform: scale(1.5);
-// }
 
 
+.navbar-default .navbar-brand{
+  color:rgba(1,87,99,1);
+  font-size: 30px;
+  font-weight: 900;
+}
+.navbar-default .navbar-nav>li>a{
+  color:rgba(1,87,99,1);
+}
 
+.profilewalls{
+  border-bottom: 2px solid 33,68,209,1;
+}
 
-// #testid{
-
-//   text-align: left;
-
-// }
+.btn-primary{
+  background-color:rgba(1,87,99,.7);
+}
 

@@ -1,4 +1,4 @@
-body { background-color: #FCFCFC; }
+body { background-color: #FCFCFC; font-family: 'Play', sans-serif; }
 
 ul { margin: 0; padding: 0; list-style-type: none; }
 
@@ -20,7 +20,7 @@ img:hover { opacity: 0.4; }
 
 .jumbotron { background: rgba(230, 230, 230, 0.8); margin-top: 240px; text-align: center; }
 
-.page-header { text-align: center; border-bottom: 2px solid black; margin-top: 0px; }
+.page-header { text-align: center; border-bottom: 3px solid #015763; margin-top: 0px; font-size: 40px; font-weight: 700; }
 
 #main-title-header { text-shadow: 1px 1px #222222; }
 
@@ -56,7 +56,7 @@ img:hover { opacity: 0.4; }
 
 #view_btns { margin-left: 40%; }
 
-#maptitle { margin-top: 20px; }
+#maptitle { margin-top: 20px; text-align: center; padding-bottom: 10px; border-bottom: 2px solid black; }
 
 footer { background-color: rgba(0, 0, 0, 0.5); margin-top: 250px; font-size: 1.5em; text-align: center; padding-top: 50px; color: #ccc; height: 100px; position: relative; bottom: 0px; }
 
@@ -75,5 +75,13 @@ footer { background-color: rgba(0, 0, 0, 0.5); margin-top: 250px; font-size: 1.5
 .btn-primary.outline:active, .btn-primary.outline.active { border-color: #007299; color: #007299; box-shadow: none; }
 
 #wallscity { text-shadow: 4px 4px #222222; font-size: 30px; }
+
+.navbar-default .navbar-brand { color: #015763; font-size: 30px; font-weight: 900; }
+
+.navbar-default .navbar-nav > li > a { color: #015763; }
+
+.profilewalls { border-bottom: 2px solid 33,68,209,1; }
+
+.btn-primary { background-color: rgba(1, 87, 99, 0.7); }
 
 /*# sourceMappingURL=style.css.map */
