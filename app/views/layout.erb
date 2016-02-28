@@ -50,6 +50,9 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-home"></i>  <%= current_user.username %> <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                       <li><a href="/users/<%= current_user.id %>">profile</a></li>
+                      <% if !is_artist? %>
+                      <li><a href="/walls/new">add a wall</a></li>
+                      <% end %>
                       <li><a href="/users/<%= current_user.id %>/edit">edit profile</a></li>
                       <li><a href="/logout">logout</a></li>
                     </ul>
