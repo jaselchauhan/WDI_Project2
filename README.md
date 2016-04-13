@@ -22,6 +22,7 @@ users log in as either a wall owner or an artist and are able to:
 * PostgreSQL for database
 * Carrierwave for file uploading
 * Bcrypt for password encryption
+* Bower Components
 * SASS for CSS compilation
 * Bootstrap CSS Framework
 
