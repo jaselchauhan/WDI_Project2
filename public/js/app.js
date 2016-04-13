@@ -74,11 +74,10 @@ $( document ).ready(function() {
 
 
     })
-  
+
 
     var wallsData = JSON.parse($('[name=walls-data]').val());
     console.log(wallsData);
-
 
     markers = wallsData.map(function(walls){
 
@@ -89,15 +88,14 @@ $( document ).ready(function() {
         animation: google.maps.Animation.DROP
       });
 
-
       var infoWindow = new google.maps.InfoWindow({
         position: {lat: walls.lat, lng: walls.lng},
         content: '<div class="info-window">' +
-            '<h4>' + walls.title + '</h4>' + 
+            '<h4>' + walls.title + '</h4>' +
               // '<form action="/walls/' + walls.id + '" method="POST">' +
               //   '<input type="hidden" name="_method" value="DELETE">' +
                 '<img src="' + walls.image + '" width=150px>' + '<br><br>' +
-                '<a class="btn btn-primary" href="/walls/' + walls.id + '">have a look</a>' + 
+                '<a class="btn btn-primary" href="/walls/' + walls.id + '">have a look</a>' +
               // '<form>' +
             '</div>'
       });
@@ -114,8 +112,6 @@ $( document ).ready(function() {
       return marker;
     })
   }
-
-
 
   if ($propertyForm.length){
 
@@ -147,11 +143,11 @@ $( document ).ready(function() {
 
 
   function show_grid(){
-      $("#gridmaps").delay(500).fadeToggle(); 
+      $("#gridmaps").delay(500).fadeToggle();
   }
 
   function show_maps(){
-      $("#mapwalls").delay(500).fadeToggle(); 
+      $("#mapwalls").delay(500).fadeToggle();
   }
 
 
@@ -175,12 +171,6 @@ $( document ).ready(function() {
       // console.log(counter);
     // }
   });
-
-
-
-
-
-
 
 
 });
