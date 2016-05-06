@@ -1,7 +1,7 @@
 ## WDI Project Two - sparewall
 
 
->####sparewall is a website which connects people who own spare walls with those who want to paint them. It was made for my second project at GA WDI and was built in 5 days.
+>####sparewall is a website which connects people who own spare walls with those who want to paint them. It was made for my second project at GA WDI and was built in five days.
 
 ![Alt text](public/images/readme_pics/sparewall.png)
 
