@@ -1,8 +1,9 @@
-## Web Development Immersive Project Two - sparewall
-
+## WDI Project Two - sparewall
 
 
 >####sparewall is a website which connects people who own spare walls with those who want to paint them. It was made for my second project at GA WDI and was built in 5 days.
+
+![Alt text](public/images/readme_pics/sparewall.png)
 
 ###How it Works:
 	
@@ -33,11 +34,6 @@ users log in as either a wall owner or an artist and are able to:
   * add comments feature whereby users can comment on posts
   * refactor code
 
-
-
-
-
-![Alt text](public/images/readme_pics/sparewall.png)
 ![Alt text](public/images/readme_pics/search.png)
 ![Alt text](public/images/readme_pics/map.png)
 ![Alt text](public/images/readme_pics/finishedwalls.png)
